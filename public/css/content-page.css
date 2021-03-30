@@ -1,0 +1,152 @@
+/*Reset starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box-sizing;
+}
+
+html, body{
+    line-height: 1.2;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #efefef;
+}
+
+.ui.secondary.menu{
+    background: #185074;
+    height: 65px;
+}
+
+nav a.item{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.right.menu .ui.button{
+    height: 40px;
+    width: 140px;
+    background: #fdfdfd;
+    margin: 11px 18px 0 0;
+}
+
+.right.menu a:nth-child(1){
+    color: #185047;
+    font-size: 16px;
+}
+
+.right.menu a:nth-child(2),
+.right.menu a:nth-child(3),
+.right.menu a:nth-child(4){
+    color: #fdfdfd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 18px 0 0;
+}
+
+.w-container{
+    width: 100%;
+    height: 100%;
+}
+
+.aside-container{
+    width: 22%;
+    height: 100%;
+    margin: 4.5% 0 0 0;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.aside-container .info-container{
+    width: 90%;
+    margin: 10% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-container .info{
+    width: 100%;
+    height: 160px;
+    margin-top: 3%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.main-container{
+    width: 78%;
+    height: 100%;
+    float: right;
+    margin-top: 4.5%;
+    position: relative;
+}
+
+.main-container .editing-area{
+    width: 90%;
+    height: 96%;
+    margin: 3% 5% 0 5%;
+    background: #fdfdfd;
+    box-shadow: -4px -4px 2.5px 3.5px #eee, 4px 4px 2.5px 3.5px #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.editing-area form .form:nth-child(1),
+.editing-area form .form:nth-child(2){
+    width: 80%;
+    margin: 3.5565% 18% 0 18%;
+}
+
+.editing-area form .form{
+    margin: 3%  0 0 15%;
+}
+
+
+.form input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-indent: 40px;
+    letter-spacing: 1.2px;
+}
+
+.form .title-field{
+    font-size: 38px;
+}
+
+.form .image-field{
+    font-size: 28px;
+}
+
+.form .title-field::placeholder{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #1a1a1a;
+    opacity: 0.5;
+}
+
+.form .image-field::placeholder{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    opacity: 0.7;
+    opacity: 0.5;
+}
+
+.btn-group{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0 0 15%;
+}
+
+.btn-group button.ui.button{
+    width: 20%;
+    height: 46px;
+    margin-left: 10px;
+}

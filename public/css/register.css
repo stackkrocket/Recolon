@@ -1,0 +1,183 @@
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.2;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Reset ends*/
+
+
+
+/**Register page styling starts*/
+.account-creation-area{
+    width: 100%;
+    height: auto;
+    background: #185074;
+}
+
+.account-creation-area .area-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 0 0;
+}
+
+.area-content .message{
+    margin: 2% 0 0 0;
+    color: #fdfdfd;
+    text-align: center;
+}
+
+.area-content .message h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23.5px;
+    line-height: 24px;
+}
+
+.area-content .message p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15.5px;
+}
+
+.area-content .form-section-container{
+    margin: 2% 10% 0 10%;
+    width: 80%;
+    height: auto;
+}
+
+.form-section-container .form-input-section{
+    width: 70%;
+    height: auto;
+    margin: 0 15% 0 15%;
+}
+
+.form-input-section .form-field{
+    width: 50%;
+    height: 490px;
+    margin: 0 25% 0 25%;
+    background: #fdfdfd;
+    border-radius: 3px;
+    box-shadow: rgba(16, 21, 23, 0.14) 0px 2px 2px 0px, rgba(16, 21, 23, 0.12) 0px 3px 1px -2px, rgba(16, 21, 23, 0.2) 0px 1px 5px 0px;
+}
+
+.form-field form .form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 2% 15% 4% 15%;
+}
+
+.form label,
+.form input{
+    padding: 8px 0 0 0;
+}
+
+.form label{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14.4px;
+    color: #2c3338;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.form input{
+    height: 44px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-indent: 18px;
+    font-size: 15.5px;
+    color: #2c3338;
+    font-weight: 500;
+}
+
+
+.form-field .acct-completion{
+    width: 80%;
+    margin: 3% 10% 0 10%;
+}
+
+.form-field .acct-completion p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: #2c3338;
+    text-align: center;
+}
+
+.form-field .acct-completion button{
+    margin: 0 0 0 20%;
+}
+
+
+.social-sign-in{
+    width: 40%;
+    height: 250px;
+    margin: 2% 30% 0 30%;
+}
+
+.social-sign-in .social-btn{
+    margin: 2% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-btn button:nth-child(2){
+    margin: 10px 0 0 0;
+}
+
+.social-btn button{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 1px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+    width: 80%;
+    height: 44px;
+    background: #fdfdfd;
+    font-size: 14px;
+    color: #3c434a;
+    cursor: pointer;
+    transform: translateZ(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.social-btn button:nth-child(1):hover,
+.social-btn button:nth-child(1):active,
+.social-btn button:nth-child(1):focus{
+    transform: scale(1.1);
+    background: #DB4437;
+    color: #fdfdfd;
+}
+
+.social-btn button:nth-child(2):hover,
+.social-btn button:nth-child(2):active,
+.social-btn button:nth-child(2):focus{
+    transform: scale(1.1);
+    background: #4267B2;
+    color: #fdfdfd;
+}
+
+.social-info{
+    margin: 4.5% 0 0 0;
+}
+
+.social-info p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fdfdfd;
+}
+
+/*Register page styling ends*/

@@ -1,0 +1,274 @@
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.2;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Reset ends*/
+
+
+/*Flash error and success message styling starts*/
+.ui.message{
+    width: 50%;
+    height: 50px;
+    margin: 3% 25%;
+}
+/*flash error styling ends*/
+
+/*icon styling*/
+i.edit{
+    font-size: 26px;
+}
+
+/*Landing page*/
+
+i.arrow-right{
+    color: #0070ba;
+    font-size: 30px;
+}
+
+.ui.blue.button{
+    height: 50px;
+}
+
+.ui.button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.page-highlight{
+  width: 100%;
+  height: 80%;
+  background: url("/images/image-1.jpg") #4c4c4c;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-highlight .highlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 0 0 0;
+}
+
+.page-highlight .highlight h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 34px;
+    color: #fdfdfd;
+    line-height: 58.5px;
+    text-align: center;
+    
+}
+
+.page-highlight .highlight p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20.5px;
+    color: #cfcfcf;
+    line-height: 28px;
+    text-align: center;
+}
+
+.page-highlight .highlight button a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16.5px;
+    color: #fdfdfd;
+}
+
+/*Landing page ends*/
+
+
+/*info section styling starts*/
+.info{
+    width: 100%;
+    height: auto;
+    margin: 5% 0 0 0;
+    display: block;
+}
+
+.info .card-boxes{
+    width: 90%;
+    height: 100%;
+    margin: 0  5%;
+    display: grid;
+    grid-row: 10px;
+    grid-column: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.info .card-boxes .card-box{
+    text-align: center;
+    padding: 1.5rem 1rem 5rem 1rem;
+    margin: 0 5%;
+    cursor: pointer;
+    box-shadow: #ddd -2.1159px -6.2318px 10.3091px 0px, #ddd 2.1159px 6.2318px 10.3091px 0px;
+    transform: translateZ(0);
+    transition: 0.3s;
+}
+
+.info .card-boxes .card-box:hover{
+    transform: scale(1.1);
+}
+
+.info .card-boxes .card-box img{
+    width: 60%;
+    height: 60%;
+}
+
+.info .card-boxes .card-box h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    color: #0070ba;
+}
+
+.info .card-boxes .card-box p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #145882;
+}
+
+/*info styling page ends*/
+
+/*dev community styling starts*/
+.dev-community-section{
+    width: 100%;
+    height: auto;
+    margin: 9% 0 0 0;
+}
+
+.dev-community-section .d-comm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+.dev-community-section .d-comm h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    color: #0070ba;
+    line-height: 55px;
+    text-align: center;
+}
+
+.dev-community-section .d-comm p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #185074;
+    line-height: 24px;
+    text-align: center;
+}
+
+/*dev community styling ends*/
+
+/*showing dev community starts*/
+.showing-dev-community{
+    width: 100%;
+    height: 100%;
+    margin: 9% 0 0 0;
+    background: url('/images/image-1.jpg') #4c4c4c;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showing-dev-community .show-info{
+    width: 30%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5% 0 0 15%;
+}
+
+.showing-dev-community .show-dev-comm-container{
+    width: 70%;
+    height: 100%;
+    float: right;
+    display: block;
+}
+
+.showing-dev-community .show-dev-comm-container .comm-cards{
+    width: 70%;
+    height: 90%;
+    margin: 5% 15%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.comm-cards p{
+    font-family:Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    padding: 30% 0 0 0;
+    color: #fdfdfd;
+}
+
+.showing-dev-community .show-dev-comm-container .comm-cards .comm-card{
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform
+}
+
+.showing-dev-community .show-dev-comm-container .comm-cards .comm-card:hover,
+.showing-dev-community .show-dev-comm-container .comm-cards .comm-card:active,
+.showing-dev-community .show-dev-comm-container .comm-cards .comm-card:focus{
+    transform: scale(1.1);
+}
+
+#comm-card1{
+    background: #f26e17;
+}
+
+#comm-card2{
+    background: #a232c7;
+}
+
+#comm-card3{
+    background: #2185d0;
+}
+
+#comm-card4{
+    background: #da2727;
+}
+
+#comm-card5{
+    background: #21ba45;
+}
+
+#comm-card6{
+    background: #fabc07;
+}
+
+#comm-card7{
+    background: #00b5ad;
+}
+
+#comm-card8{
+    background: #a2653d;
+}
+
+#comm-card9{
+    background: #6435c9;
+}
+
+/*Showing dev community ends*/

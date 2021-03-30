@@ -1,0 +1,153 @@
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.2;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f6f7f7;
+}
+/*Reset ends*/
+
+
+/*Nav bar background color*/
+nav.navbar{
+    background: #185074;
+    width: 100%;
+    height: 50px;
+    overflow-y: hidden;
+}
+
+.navbar .navbar-left{
+    width: 40%;
+    float: left;
+    margin: 7px 0 0 3.5%;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-right{
+    width: 50%;
+    float: right;
+    margin: 12px 0 0 0;
+}
+/*Navbar section ends*/
+
+/*Form - Login area styling starts*/
+.login-container{
+    width: 100%;
+    height: auto;
+}
+
+.login-field{
+    width: 30%;
+    height: 490px;
+    background: #ffffff;
+    margin: 2% 35% 0 35%;
+    box-shadow: rgb(220, 220, 222) 0px 0px 0px 1px;
+}
+
+.login-field .form-field{
+    width: 70%;
+    margin: 0 15% 0 15%;
+    padding-top: 15px;
+}
+
+.login-field .form-field form .form{
+    display: flex;
+    flex-direction: column;}
+
+.form label{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #3c434a;
+    font-weight: 500;
+}
+
+.form input{
+    border: 1px solid #dcdcdc;
+    outline: none;
+    height: 45px;
+    text-indent: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.form input:hover,
+.form input:active,
+.form input:focus{
+    border: 1px solid #0070ba;
+    transition: 0.2s ease;
+}
+
+.form:nth-child(2){
+    margin: 8% 0 0 0;
+}
+
+.ui.red.button{
+    height: 44px;
+    font-size: 16px;
+}
+
+.social-button-group{
+    width: 70%;
+    margin: 10px 3% 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-button-group button{
+    border: 1px solid #dcdcdc;
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    height: 44px;
+    background: #fdfdfd;
+    font-size: 14px;
+    color: #3c434a;
+    cursor: pointer;
+    transform: translateZ(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.social-button-group button:nth-child(1):hover,
+.social-button-group button:nth-child(1):active,
+.social-button-group button:nth-child(1):focus{
+    transform: scale(1.1);
+    background: #DB4437;
+    color: #fdfdfd;
+}
+
+.social-button-group button:nth-child(2):hover,
+.social-button-group button:nth-child(2):active,
+.social-button-group button:nth-child(2):focus{
+    transform: scale(1.1);
+    background: #4267b2;
+    color: #fdfdfd;
+}
+
+.alert{
+    width: 100%;
+    margin: 5px 5% 0 5%;
+    text-align: center;
+}
+
+.alert p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: #2c3338;
+    font-weight: 500;
+}
+
+.alert p a{
+    text-decoration: none;
+}

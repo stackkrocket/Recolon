@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recolon - Published Content</title>
+    <link rel="icon" type="image/png" href="/images/favicon_io/favicon-32x32.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="/css/feed.css">
+</head>
+<body>
+    
+
+<!--Navbar begins here-->
+<nav class="ui fixed secondary menu">
+  <a style="color: #fdfdfd;" href="/recolon/auth/index" class="item"><i class="edit outline icon"></i>Recolon</a>    
+
+  <div class="right menu">
+    <a class="ui button" href="/recolon/new"><i class="plus circle icon"></i>Write</a>
+    <a href="#"><i class="cog icon"></i></a>
+    <a href="#"><i class="bell icon"></i></a>
+    <a href="#">Logout</a>
+  </div>
+</nav>
+<!--Navbar Ends here-->
+
+
+<section class="feed-container">
+
+  <!--Aside section-->
+  <aside class="container">
+    <div class="user-info">
+      <h3 class="user-name"><%= currentUser.username %> <%= currentUser.lastName %> </h3>
+      <p class="user-bio">Passionate about web development.</p>
+      <p>Send me a message on <a href="#">Twitter</a></p>
+    </div>
+
+    <div class="aside-links">
+      <div class="list-item" id="item-1">
+        <p><i class="check circle outline icon"></i>Home</p>
+      </div>
+
+      <div class="list-item active" id="item-2">
+        <p><i class="chart line icon"></i>Published</p>
+      </div>
+
+      <div class="list-item" id="item-3">
+        <p><i class="users icon"></i>Feed</p>
+      </div>
+
+      <div class="list-item" id="item-4">
+        <p><i class="anchor icon"></i>Communities</p>
+      </div>
+
+      <div class="list-item" id="item-4">
+        <p><i class="star outline icon"></i>Interaction</p>
+      </div>
+
+      <div class="list-item" id="item-5">
+        <p><i class="sort icon"></i>Sort By<i style="float: right; padding-right: 30px;" class="chevron down icon"></i></p>
+      </div>
+
+      <div class="list-item" id="item-6">
+        <p><i class="tags icon"></i>Tags <i style="float: right; padding-right: 30px;" class="chevron down icon"></i></p>
+      </div>
+    </div>
+  </aside>
+
+  <!--Aside section ends here-->
+
+    <!--Feed content starts-->
+    <div class="feed-content-container">
+        <div class="boxes">
+
+            <div class="search-bar-container">
+                <div id="p-search" class="ui category search">
+                    <div class="ui icon input">
+                      <input type="text" placeholder="Search">
+                      <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                  </div>
+            </div>
+
+            <div class="s-following-container">
+                <div class="s-following">
+                    <p>Followed Sites</p>
+                    <button><a href="#">Manage</a></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="main-content-container">
+            <div class="ui divided link items">
+                <% posts.forEach((post)=> { %>
+                     <div class="item" onclick="location.href='/recolon/<%= post._id %>'">
+                        <div class="ui small image">
+                            <img src="<%= post.image %>" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <strong style="font-size: 26px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                    <%= post.title %> 
+                                </strong>
+                            </div>
+                            <div class="description">
+                                <p style="line-height: 28px; color: #3c3c3c; font-size: 16px; font-weight: 500;"><%- post.content.substring(0, 300) %> </p>
+                            </div>
+                            <div class="statistics">
+                                <div class="visit-icon">
+                                    <span><i class="external alternate icon"></i>Visit</span>
+                                </div>
+
+                                <div class="share-icon">
+                                    <span><i class="share alternate icon"></i></span>
+                                    <span><i class="star outline icon"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                <% }) %> 
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Main content container-->
+   
+
+</section>
+<!--Feed content ends-->
+
+
+    <!--JQUERY Plugin-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!--Custom Script-->
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
+

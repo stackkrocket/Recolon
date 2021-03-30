@@ -1,0 +1,201 @@
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    line-height: 1.2;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Reset ends*/
+
+
+.ui.secondary.menu{
+    background: #185074;
+    height: 65px;
+}
+
+nav a.item{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.right.menu .ui.button{
+    height: 40px;
+    width: 140px;
+    background: #fdfdfd;
+    margin: 11px 18px 0 0;
+}
+
+.right.menu a:nth-child(1){
+    color: #185047;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.right.menu a:nth-child(2),
+.right.menu a:nth-child(3),
+.right.menu a:nth-child(4){
+    color: #fdfdfd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 18px 0 0;
+    text-decoration: none;
+}
+
+
+.show-page-container{
+    width: 100%;
+    height: auto;
+    margin: 4.5% 0 0 0;
+}
+
+.show-page-container .sticky-sidebar{
+    float: left;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 30%;
+    height: 100%;
+}
+
+.show-page-container .sticky-sidebar .image-position{
+    width: 100px;
+    height: 100px;
+    margin: 20% 0 0 44%;
+}
+
+.show-page-container .sticky-sidebar .image-position img{
+    width: 100%;
+    height: 100%;
+}
+
+.show-page-container .sticky-sidebar .author-info{
+    margin: 5% 0 0 46%;
+}
+
+.author-info p:nth-child(1) a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0070ba
+}
+
+.author-info p:nth-child(2) a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 0 0 5px;
+    text-decoration: none;
+    color: #0070ba;
+}
+
+.author-info p:nth-child(3){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #646970;
+}
+
+
+.show-page-container .sticky-sidebar .author-stats ul{
+    margin: 3.5858% 0 0 46%;
+    list-style-type: none;
+}
+
+.author-stats ul li{
+    padding: 5px 0;
+}
+
+.author-stats ul li a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0 0 40%;
+}
+
+
+.show-page-container .show-page-content{
+    width: 60%;
+    height: auto;
+    float: right;
+    margin: 0 9.62% 0 0;
+}
+
+.show-page-content .header h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-size: 700;
+    letter-spacing: normal;
+    color: #3c434a;
+}
+
+.show-page-content .header .datestamp a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #737373;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.show-page-content .image-container{
+    width: 600px;
+    height: 450px;
+    margin: 4% 0 0 0;
+}
+
+.show-page-content .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.show-page-content .show-page-content-body{
+    width: 90%;
+    margin: 4% 0 0 0;
+}
+
+.show-page-content .show-page-content-body p{
+    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #3c434a;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: start;
+}
+
+.show-page-content .show-page-content-body blockquote{
+    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #646970;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: start;
+    padding: 0 0 0 28px;
+    border-left: 2px solid #cfcfcf;
+}
+
+/*Comments Section styling starts*/
+
+.comment-section-wrapper{
+    margin: 8% 0 0 0;
+    width: auto;
+    height: auto;
+}
+
+.comment-form{
+    margin: 5% 0 0 0;
+}
