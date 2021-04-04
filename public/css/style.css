@@ -1,3 +1,5 @@
+@import url('_global.css');
+@import url('_variable.css');
 
 /*Reset*/
 *{
@@ -23,136 +25,98 @@ html, body{
 }
 /*flash error styling ends*/
 
-/*icon styling*/
-i.edit{
-    font-size: 26px;
-}
-
-/*Landing page*/
-
-i.arrow-right{
+/*Navbar area starts*/
+.header-area .navbar .navbar-brand{
+    padding: 0.2rem 0.5rem;
     color: #0070ba;
-    font-size: 30px;
+    font-size: 23.5px;
+    font-weight: 600;
+}
+/*Navbar area ends*/
+
+/*Main section starts*/
+
+.main-site{
+    width: 100vw;
+    height: 65vh;
+    background: url('/images/image-1.jpg') #424242;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.ui.blue.button{
-    height: 50px;
-}
-
-.ui.button:hover{
-    opacity: 0.8;
-    transition: 0.2s ease-in-out;
-}
-
-.page-highlight{
-  width: 100%;
-  height: 80%;
-  background: url("/images/image-1.jpg") #4c4c4c;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.page-highlight .highlight{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12% 0 0 0;
-}
-
-.page-highlight .highlight h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 34px;
-    color: #fdfdfd;
-    line-height: 58.5px;
+.main-site .jumbotron{
+    padding-top: 10%;
     text-align: center;
-    
+    font-family: var(--roboto);
 }
 
-.page-highlight .highlight p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20.5px;
+.main-site .jumbotron .title-text{
+    font: normal 600 34px/58.5px var(--roboto);
+    color: #fdfdfd;
+}
+
+.main-site .jumbotron .para-text{
+    font: normal 500 20.5px/28px var(--roboto);
     color: #cfcfcf;
-    line-height: 28px;
-    text-align: center;
+    letter-spacing: 1.2px;
 }
 
-.page-highlight .highlight button a{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16.5px;
-    color: #fdfdfd;
-}
 
-/*Landing page ends*/
+/*Main section ends*/
 
 
 /*info section styling starts*/
+
 .info{
-    width: 100%;
-    height: auto;
     margin: 5% 0 0 0;
-    display: block;
+    width: 100vw;
+    height: auto;
 }
 
-.info .card-boxes{
-    width: 90%;
-    height: 100%;
-    margin: 0  5%;
-    display: grid;
-    grid-row: 10px;
-    grid-column: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.info .card-boxes .card-box{
-    text-align: center;
-    padding: 1.5rem 1rem 5rem 1rem;
-    margin: 0 5%;
+.info .card-info{
+    margin: 0 10px;
+    padding: 3rem 4rem;
+    box-shadow: var(--box-shadow);
     cursor: pointer;
-    box-shadow: #ddd -2.1159px -6.2318px 10.3091px 0px, #ddd 2.1159px 6.2318px 10.3091px 0px;
     transform: translateZ(0);
     transition: 0.3s;
+    text-align: center;
+    color: #424242;
 }
 
-.info .card-boxes .card-box:hover{
-    transform: scale(1.1);
+.info .card-info:hover{
+    transform: scale(0.9);
+    background: var(--gradient-color-2);
+    color: #f5f5f5;
 }
 
-.info .card-boxes .card-box img{
-    width: 60%;
-    height: 60%;
+.info .card-info h3{
+    font: normal 600 26px/33.5px var(--roboto);
 }
 
-.info .card-boxes .card-box h3{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 26px;
-    color: #0070ba;
+.info .card-info p{
+    font: normal 500 16px/24px var(--roboto);
 }
 
-.info .card-boxes .card-box p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    color: #145882;
+.info .card-info img{
+    width: 350px;
+    height: 300px;
 }
 
-/*info styling page ends*/
+/*info section ends*/
 
 /*dev community styling starts*/
 .dev-community-section{
-    width: 100%;
-    height: auto;
-    margin: 9% 0 0 0;
+    width: 100vw;
+    height: 50vh;
+    margin: 5% 0 0 0;
 }
 
 .dev-community-section .d-comm{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 10% 0 10%;
+   text-align: center;
+   margin: 6rem 0 0 0;
 }
 
 .dev-community-section .d-comm h2{
@@ -173,102 +137,152 @@ i.arrow-right{
 
 /*dev community styling ends*/
 
+
 /*showing dev community starts*/
-.showing-dev-community{
-    width: 100%;
-    height: 100%;
-    margin: 9% 0 0 0;
-    background: url('/images/image-1.jpg') #4c4c4c;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.communities{
+    margin: 5% 0 0 0;
+    width: 100vw;
+    height: auto;
 }
 
-.showing-dev-community .show-info{
-    width: 30%;
-    height: 100%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3.5% 0 0 15%;
+.communities .tagline h2{
+    font: normal 600 32px/38.5px var(--roboto);
+    color: #424242;
+    padding-left: 20px;
 }
 
-.showing-dev-community .show-dev-comm-container{
-    width: 70%;
-    height: 100%;
-    float: right;
-    display: block;
-}
-
-.showing-dev-community .show-dev-comm-container .comm-cards{
-    width: 70%;
-    height: 90%;
-    margin: 5% 15%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.comm-cards p{
-    font-family:Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    padding: 30% 0 0 0;
-    color: #fdfdfd;
-}
-
-.showing-dev-community .show-dev-comm-container .comm-cards .comm-card{
-    text-align: center;
-    padding: 0.6rem;
-    border-radius: 5px;
+.communities .comm-items{
+    margin: 5% 10px 0 10px;
+    padding: 2rem 3rem;
+    box-shadow: var(--box-shadow-2);
     cursor: pointer;
     transform: translateZ(0);
-    transition-duration: 0.3s;
-    transition-property: transform
+    transition: 0.3s;
+    text-align: center;
+    color: #424242;
 }
 
-.showing-dev-community .show-dev-comm-container .comm-cards .comm-card:hover,
-.showing-dev-community .show-dev-comm-container .comm-cards .comm-card:active,
-.showing-dev-community .show-dev-comm-container .comm-cards .comm-card:focus{
-    transform: scale(1.1);
+.comm-items i{
+    font-size: 26px;
+    color: #0070ba;
 }
 
-#comm-card1{
-    background: #f26e17;
+.comm-items h3{
+    font: normal 500 19px/27px var(--roboto);
+    color: #424242;
 }
 
-#comm-card2{
-    background: #a232c7;
+.comm-items hr{
+    width: 4vw;
+    margin: 5% auto 0 auto;
+    height: 3px;
+    color: #0070ba;
 }
 
-#comm-card3{
-    background: #2185d0;
-}
-
-#comm-card4{
-    background: #da2727;
-}
-
-#comm-card5{
-    background: #21ba45;
-}
-
-#comm-card6{
-    background: #fabc07;
-}
-
-#comm-card7{
-    background: #00b5ad;
-}
-
-#comm-card8{
-    background: #a2653d;
-}
-
-#comm-card9{
-    background: #6435c9;
+.comm-items:hover{
+    transform: scale(1.08);
 }
 
 /*Showing dev community ends*/
+
+
+/*Choose us starts*/
+
+.choose-us{
+    width: 100vw;
+    height: auto;
+    margin: 5% 0 0 0;
+    background: #185074;
+}
+
+.choose-us .left-item{
+    margin: 5% 0 0 2.5%;
+}
+
+.choose-us .left-item h2{
+    font: normal 700 30px/48.4px var(--roboto);
+    color: #f5f5f5;
+}
+
+.choose-us .left-item  h3{
+    font: normal 600 18px/26px var(--roboto);
+    color: #f5f5f5;
+}
+
+.choose-us .left-item p{
+    font: normal 500 16px/24px var(--roboto);
+    color: #f5f5f5;
+    text-align: left;
+}
+
+.choose-us .left-item i{
+    font-size: 16px;
+    color: #727272;
+    padding-right: 5px;
+}
+
+.choose-us .explore-btn button{
+    margin: 2% 0 0 0;
+    width: 190px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #dd4437;
+    color: #f5f5f5;
+    font: normal 500 16px/2px var(--roboto);
+    cursor: pointer;
+    transform: translateZ(0);
+    transition: 0.3s;
+}
+
+.choose-us .explore-btn button:hover{
+    transform: scale(1.1);
+    background: #ff4437;
+}
+
+.choose-us .choose-us-image img{
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+}
+
+/*Choose us section ends*/
+
+
+/*Trending section starts*/
+.trending{
+    width: 100vw;
+    height: auto;
+    margin: 3% 0 0 0;
+}
+
+.trending .left-trending-item img{
+    width: 200px;
+    height: 150px;
+}
+
+.content .username span{
+    font: normal 500 16px/2px var(--roboto);
+    color: #424242;
+}
+
+.content .username strong{
+    font: normal 600 18px/20px var(--roboto);
+    color: #424242;
+}
+
+.content .header strong{
+    font: normal 700 22px/38px var(--roboto);
+    color: #424242;
+}
+
+.content .description p{
+    font: normal 500 17px/24px var(--roboto);
+    color: #727272;
+}
+
+.left-trending-item{
+    width: 55vw;
+    margin: 1% 0 0 10vw;
+}

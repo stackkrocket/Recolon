@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const passport  = require('passport');
+const Post = require('../models/post');
 
 
 //====include user model===//
@@ -21,10 +22,14 @@ const isUserAuthenticated = (req, res, next) => {
 
 
 //======landing page===//
-router.get('/', function(req, res){
-    res.render('index')
+router.get('/', (req, res) => {
+    Post.find({}, (err, post) => {
+        if(err){
+            throw new Error("Could not find posts");
+        }
+        res.render('index.ejs', {posts: post})
+    })
 })
-
 //create a new user
 router.get('/recolon/accounts/register', authController.create_user_form);
 

@@ -35,7 +35,7 @@ exports.create_post = (req, res, next) => {
     const title = req.body.title;
     const image = req.body.image;
     const content = req.body.content;
-    const author = {id: req.user._id, username: req.user.username}
+    const author = {id: req.user._id, username: req.user.username, lastName: req.user.lastName}
 
     const newPost = {title: title, image: image, content: content, author: author}
 

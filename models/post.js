@@ -31,7 +31,8 @@ var postSchema = new Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'
         },
-        username: String
+        username: String,
+        lastName: String
     }
 })
 
