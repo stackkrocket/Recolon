@@ -2,7 +2,7 @@
 
 /*navbar starts*/
 .header-area .navbar{
-    padding: 1rem 10rem;
+    padding: 1rem 8rem;
     background: #185074;
     height: 4.5rem;
 }
@@ -14,7 +14,7 @@
 }
 
 .button{
-    padding: 0.8rem 2.2rem;
+    padding: 0.6rem 2rem;
     margin: 0 1.2rem;
     font: normal 500 16px/20px var(--roboto);
     position: relative;
@@ -74,7 +74,7 @@
 }
 
 .form-field input{
-    height: 3rem;
+    height: 2.1rem;
     font: normal 500 16px/24px var(--roboto);
     color: #424242;
 }
@@ -93,7 +93,7 @@
 
 .password-input span{
     padding-right: 5px;
-    font-size: 26px;
+    font-size: 24px;
     color: #cec4da;
     cursor: pointer;
 }
@@ -115,7 +115,7 @@
 .button.button-submit{
     background: #4183c4;
     color: #f5f5f5;
-    font: normal 600 16px/16px var(--roboto);
+    font: normal 500 16px/16px var(--roboto);
     transform: translateZ(0);
     transition: 0.3s ease;
 }
@@ -181,7 +181,7 @@
 }
 
 .social-area .login-text{
-    font: normal 500 18px/10px var(--roboto);
+    font: normal 500 16px/10px var(--roboto);
 }
 
 

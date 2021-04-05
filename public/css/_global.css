@@ -1,14 +1,14 @@
 /*Navbar area starts*/
 
 .header-area .navbar{
-    padding: 1rem 10rem;
+    padding: 1rem 8rem;
     background: #185074;
     height: 4.5rem;
 }
 
 
 .button{
-    padding: 0.8rem 2.2rem;
+    padding: 0.7rem 2.1rem;
     margin: 0 1.2rem;
     font: normal 500 16px/20px var(--roboto);
     position: relative;
