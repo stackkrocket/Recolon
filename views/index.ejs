@@ -257,11 +257,11 @@
                </div>
      
                <div class="description">
-                 <p><%= post.content.substring(0, 200) %></p>
+                 <p><%- post.content.substring(0, 200) %></p>
                </div>
   
                <div class="created" style="padding-top: 5px;">
-                 <span><%- post.created.toDateString() %> - 8 min read</span>
+                 <span><%= post.created.toDateString() %> - 8 min read</span>
   
                <span><i class="far fa-star" style="padding-left: 20vw; font-size: 18px;"></i></span>
                </div>
