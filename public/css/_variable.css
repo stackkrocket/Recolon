@@ -2,6 +2,7 @@
     --roboto: 'Roboto', cursive, sans-serif;
     --gradient-color: linear-gradient(94deg, #0070ba, #854fee 100%);
     --gradient-color-2: linear-gradient(80deg, #854fee, #0070ba 100%);
+    --gradient-color-3: linear-gradient(120deg, #080820, #185074 100%);
     --box-shadow:  0px 10px 30px rgba(57, 56, 61, 0.205);
     --box-shadow-2: #ddd -2.1159px -6.2318px 10.3091px 0px, #ddd 2.1159px 6.2318px 10.3091px 0px;
 

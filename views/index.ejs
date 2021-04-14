@@ -250,7 +250,7 @@
                  <span>By</span> <strong><%= post.author.username %> <%= post.author.lastName %></strong>
                </div>
                <div class="header">
-                 <strong><%= post.title %></strong>
+                 <strong><%= post.title.substring(0, 30) %>...</strong>
                </div>
      
                <div class="description">
