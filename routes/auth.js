@@ -23,12 +23,15 @@ const isUserAuthenticated = (req, res, next) => {
 
 //======landing page===//
 router.get('/', (req, res) => {
-    Post.find({}, (err, post) => {
-        if(err){
-            throw new Error("Could not find posts");
-        }
-        res.render('index.ejs', {posts: post})
-    })
+   Post.find({})
+   .sort({created: -1})
+   .limit(10)
+   .exec((err, post) => {
+       if(err){
+           throw new Error('Nothing In Database')
+       }
+       res.render('index.ejs', {posts: post});
+   })
 })
 //create a new user
 router.get('/recolon/accounts/register', authController.create_user_form);

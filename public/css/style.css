@@ -26,6 +26,10 @@ html, body{
 /*flash error styling ends*/
 
 /*Navbar area starts*/
+.header-area .navbar{
+    background: #f5f5f5;
+}
+
 .header-area .navbar .navbar-brand{
     padding: 0.2rem 0.5rem;
     color: #0070ba;
@@ -285,4 +289,155 @@ html, body{
 .left-trending-item{
     width: 55vw;
     margin: 1% 0 0 10vw;
+}
+
+
+
+/*Media query */
+
+@media only screen and (max-width: 340px) and (min-width: 320px){
+
+    /*Header -Navbar Area Starts*/
+    .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -10% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Header - Navbar Area ends*/
+
+    /*Main - Jumbotron starts*/
+    .main-site{
+        width: 340px !important;
+        background: var(--gradient-color);
+    }
+
+    .main-site .jumbotron{
+        padding-top: 12%;
+    }
+
+    .main-site .jumbotron h1{
+        font-size: 20px;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 16.5;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    /*Main - Jumbotron ends*/
+
+    /*Info section starts*/
+
+    .info{
+        margin-top: 10% !important;
+    }
+    .info .container-fluid .row .card-info img{
+        width: 150px;
+        height: 150px;
+    }
+    /*Info section ends*/
+
+    /*dev community section starts*/
+
+ 
+    /*Communities section choose us starts*/
+
+    .communities,
+    .choose-us{
+        margin-top: 22% !important;
+    }
+
+    .choose-us img{
+        height: 250px !important;
+    }
+    /*Communities section, choose us ends*/
+
+    /*Trending section starts*/
+    .left-trending-item{
+        width: 96%;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 2% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 80px !important;
+        height: 80px !important;
+        margin-left: 0 !important;
+    }
+
+    .left-trending-item h2{
+        font-size: 18px;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 22px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span i{
+       font-size: 10px !important;
+    }
+
+    /*Trending Section ends*/
+   
 }

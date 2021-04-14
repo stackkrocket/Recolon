@@ -14,6 +14,14 @@ var postSchema = new Schema({
         type: String,
         required: true
     },
+    timeToRead:{
+        type: String,
+        required: true
+    },
+    community: {
+        type: String,
+        required: true
+    },
     created: {
         type: Date,
         default: Date.now
