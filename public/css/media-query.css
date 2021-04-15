@@ -1,41 +1,1022 @@
-/*Insert hamburger menu here*/
-@media screen and (min-width: 1025px) and (max-width: 1100px){
-    /*Highlight section styling starts - Media Query*/
-    .ui.secondary.menu{
-        background: #185074;
+@import url('_variable.css');
+@import url('_global.css');
+@import url('style.css');
+
+
+/*======================*/
+/*========================*/
+/*Large Screen - Mobile*/
+@media only screen and (max-width: 600px){
+
+    .header-area .navbar .navbar-brand{
+       margin-left: 0.5rem !important; 
+    }
+
+    .header-area .navbar{
+        padding: 1% 0 1% 2%;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -5% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler{
+        float: right;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Navbar area ends*/
+
+    .main-site{
+        width: 600px !important;
+        height: 600px;
+        background: url('/images/image-1.jpg') #222222;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-site .jumbotron{
+        padding-top: 22%;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 18px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info{
+        margin-top: 10% !important;
+    }
+    .info .container-fluid .row .card-info img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /*dev community section starts*/
+
+    .dev-community-section{
+        margin-top: 5% !important;
+    }
+
+    .dev-community-section .d-comm h2{
+        font-size: 28px !important;
+        line-height: 40px;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 19px !important;
+        line-height: 20px;
+    }
+ 
+    .communities .tagline h2{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .communities{
+        margin-top: 2% !important;
+    }
+
+    .choose-us{
+        margin-top: 10% !important;
+    }
+
+    .choose-us img{
+        width: 600px !important;
+        height: 250px !important;
+    }
+
+    .left-trending-item{
+        width: 590px;
+        margin-left: 4% !important;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 3% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 95px !important;
+        height: 95px !important;
+        margin-left: 0 !important;
     }
 
     
-    .page-highlight .highlight{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 18% 0 0 0;
+    .left-trending-item h2{
+        font-size: 20px !important;
+        font-family: var(--roboto);
     }
 
-    .page-highlight .highlight h2{
-        font-size: 36px;
+    .left-trending-item .item .content .username{
+        line-height: 30px !important;
     }
 
-    .page-highlight .highlight p{
-        font-size: 21.5px;
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 16px !important;
+        font-weight: 500;
     }
 
-    .page-highlight .highlight button a{
-        font-size: 17.5px;
+    .left-trending-item .item .header :is(strong){
+        font-size: 18px !important;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span i{
+       font-size: 13px !important;
     }
 
-    .page-highlight .highlight .ui.blue.button{
-        height: 56px;
-    }
-    /*Highlight section ends*/
 }
 
+/*=============================*/
+/*==============================*/
 
 
-@media screen and (min-width: 1201px) and (max-width: 1500px){
-    .ui.secondary.menu{
-        background: #185074;
+/*======================================*/
+/*====================================*/
+/*Medium - Large - Mobile*/
+@media only screen and (max-width: 480px){
+
+    .header-area .navbar .navbar-brand{
+       margin-left: 0.5rem; 
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -8% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler{
+        float: right;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Navbar area ends*/
+
+    .main-site{
+        width: 480px !important;
+        height: 550px;
+        background: url('/images/image-1.jpg') #222222;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-site .jumbotron{
+        padding-top: 22%;
+    }
+
+    .main-site .jumbotron h1{
+        font-size: 28px !important;
+    }
+
+
+    .main-site .jumbotron p{
+        font-size: 17px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info{
+        margin-top: 10% !important;
+    }
+
+    .info .container-fluid .row .card-info h3{
+        font-size: 24px !important;
+    }
+
+    .info .container-fluid .row .card-info img{
+        width: 240px;
+        height: 240px;
+    }
+
+    /*dev community section starts*/
+
+    .dev-community-section{
+        margin-top: 10% !important;
+    }
+
+    .dev-community-section .d-comm h2{
+        font-size: 23px;
+        line-height: 40px;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 17px;
+        line-height: 20px;
+    }
+ 
+    .communities .tagline h2{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .communities,
+    .choose-us{
+        margin-top: 10% !important;
+    }
+
+    .choose-us img{
+        height: 250px !important;
+    }
+
+    .left-trending-item{
+        width: 470px;
+        margin-left: 2% !important;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 5% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 80px !important;
+        height: 80px !important;
+        margin-left: 0 !important;
+    }
+
+    
+    .left-trending-item h2{
+        font-size: 19px;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 30px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span i{
+       font-size: 12px !important;
+    }
+
+    
+}
+/*======================================*/
+/*====================================*/
+
+
+
+
+/*======================================*/
+/*====================================*/
+/*Medium Screen - Mobile*/
+@media only screen and (max-width: 414px){
+
+    .header-area .navbar .navbar-brand{
+       margin-left: 0.5rem; 
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -8% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler{
+        float: right;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Navbar area ends*/
+
+    .main-site{
+        width: 414px !important;
+        height: 550px;
+        background: url('/images/image-1.jpg') #222222;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-site .jumbotron{
+        padding-top: 22%;
+    }
+
+    .main-site .jumbotron h1{
+        font-size: 26px !important;
+    }
+
+
+    .main-site .jumbotron p{
+        font-size: 16px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info{
+        margin-top: 10% !important;
+    }
+    .info .container-fluid .row .card-info img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /*dev community section starts*/
+
+    .dev-community-section{
+        margin-top: -5% !important;
+    }
+
+    .dev-community-section .d-comm h2{
+        font-size: 25px !important;
+        line-height: 40px;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 17px !important;
+        line-height: 26px;
+    }
+ 
+    .communities .tagline h2{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .communities{
+        margin-top: 13% !important;
+    }
+
+    .choose-us img{
+        height: 250px !important;
+    }
+
+    .left-trending-item{
+        width: 414px;
+        margin-left: 3% !important;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 3% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 80px !important;
+        height: 80px !important;
+        margin-left: 0 !important;
+    }
+
+    
+    .left-trending-item h2{
+        font-size: 19px !important;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 22px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 15px !important;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span{
+       font-size: 12px !important;
     }
 }
+/*======================================*/
+/*====================================*/
+
+
+
+
+
+/*======================================*/
+/*=====================================*/
+/*Small - Medium Screen - Mobile*/
+@media only screen and (max-width: 375px){
+    .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -10% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Navbar area ends*/
+
+    .main-site{
+        width: 375px !important;
+        height: 520px;
+        background: var(--gradient-color-3);
+    }
+
+    .main-site .jumbotron{
+        padding-top: 22%;
+    }
+
+    .main-site .jumbotron h1{
+        font-size: 24px !important;
+    }
+
+
+    .main-site .jumbotron p{
+        font-size: 15px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info{
+        margin-top: 10% !important;
+    }
+    .info .container-fluid .row .card-info img{
+        width: 150px;
+        height: 150px;
+    }
+
+     /*dev community section starts*/
+
+     .dev-community-section{
+         margin-top: -5% !important;
+     }
+
+     .dev-community-section .d-comm h2{
+        font-size: 23px !important;
+        line-height: 40px;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 15px !important;
+        line-height: 22px;
+    }
+ 
+    .communities .tagline h2{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .communities{
+        margin-top: 20% !important;
+    }
+
+    .choose-us img{
+        height: 250px !important;
+    }
+
+    .left-trending-item{
+        width: 370px;
+        margin-left: 2.2% !important;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 2% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 70px !important;
+        height: 70px !important;
+        margin-left: 0 !important;
+    }
+
+    
+    .left-trending-item h2{
+        font-size: 16px !important;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 22px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 15px !important;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span i{
+       font-size: 11px !important;
+    }
+
+}
+/*=============================================*/
+/*=============================================*/
+
+
+
+/*================================*/
+/*================================*/
+/*Small Screen - Mobile*/
+@media only screen and (max-width: 340px){
+    
+    .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -10% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Navbar area ends*/
+
+    /*Main site starts*/
+
+    .main-site{
+        width: 340px !important;
+        height: 520px;
+        background: var(--gradient-color-3);
+    }
+
+    .main-site .jumbotron{
+        padding-top: 22%;
+    }
+
+    .main-site .jumbotron h1{
+        font-size: 24px !important;
+        line-height: 40px !important;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 15px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info{
+        margin-top: 10% !important;
+    }
+    .info .container-fluid .row .card-info img{
+        width: 150px;
+        height: 150px;
+    }
+
+     /*dev community section starts*/
+
+     .dev-community-section{
+         margin-top: -4% !important;
+     }
+
+     .dev-community-section .d-comm h2{
+        font-size: 20px !important;
+        line-height: 40px;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 15px !important;
+        line-height: 22px;
+    }
+ 
+    
+    .communities .tagline h2{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .communities,
+    .choose-us{
+        margin-top: 22% !important;
+    }
+
+    .choose-us img{
+        height: 250px !important;
+    }
+
+    .left-trending-item{
+        width: 340px;
+        margin-left: 1.8% !important;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 2% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 70px !important;
+        height: 70px !important;
+        margin-left: 0 !important;
+    }
+
+    
+    .left-trending-item h2{
+        font-size: 15px !important;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 22px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 14px !important;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span{
+       font-size: 11px !important;
+    }
+
+}
+/*=====================================*/
+/*======================================*/
+
+
+/*===============================*/
+/*================================*/
+/*Extra Small screen - Mobile*/
+
+@media only screen and (max-width: 320px){
+
+    /*Header -Navbar Area Starts*/
+    .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 320px;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -10% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Header - Navbar Area ends*/
+
+    /*Main - Jumbotron starts*/
+    .main-site{
+        width: 320px !important;
+        height: 570px !important;
+        background: var(--gradient-color-3);
+    }
+
+    .main-site .jumbotron{
+        padding-top: 20%;
+    }
+
+    .main-site .jumbotron h3{
+        font-size: 20px !important;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 16px;
+        color: #f5f5f5 !important;
+    }
+
+    .main-site .jumbotron button{
+        padding: 0.7rem 2.1rem;
+        margin: 0 1.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        background: #f5f5f5;
+        background-clip: padding-box;
+        color: #185074;
+        transition: background 0.6s ease;
+        box-shadow: var(--box-shadow);
+    }
+
+    /*Main - Jumbotron ends*/
+
+    /*Info section starts*/
+
+    .info{
+        margin-top: 10% !important;
+    }
+    .info .container-fluid .row .card-info img{
+        width: 150px;
+        height: 150px;
+    }
+    /*Info section ends*/
+
+    /*dev community section starts*/
+
+    .dev-community-section{
+        margin-top: -5% !important;
+    }
+
+    .dev-community-section .d-comm h2{
+        font-size: 19px !important;
+        line-height: 40px;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+ 
+    /*Communities section choose us starts*/
+
+    .communities{
+        margin-top: 35% !important;
+    }
+
+    .communities .tagline h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    
+
+    .choose-us img{
+        height: 250px !important;
+    }
+    /*Communities section, choose us ends*/
+
+    /*Trending section starts*/
+    .left-trending-item{
+        width: 320px;
+        margin-left: 1.8% !important;
+    }
+
+    .left-trending-item .item .description{
+        display: none;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 2% !important;
+    }
+
+    .left-trending-item .item .post-image img{
+        width: 70px !important;
+        height: 70px !important;
+        margin-left: 0 !important;
+    }
+
+    .left-trending-item h2{
+        font-size: 15px !important;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 22px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 14px !important;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+    .left-trending-item .item .created span{
+       font-size: 11px !important;
+    }
+
+    /*Trending Section ends*/   
+}
+/*==================================*/
+/*===============================*/
