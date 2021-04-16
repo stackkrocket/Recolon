@@ -517,7 +517,7 @@
 
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 4% !important;
+        margin-left: 2% !important;
     }
 
     .left-trending-item .item .description{
@@ -530,7 +530,7 @@
     }
 
     .left-trending-item .item .content{
-        margin-left: 5% !important;
+        margin-left: 2.4% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -688,7 +688,7 @@
 
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 4% !important;
+        margin-left: 1.5% !important;
     }
 
     .left-trending-item .item .description{
@@ -701,7 +701,7 @@
     }
 
     .left-trending-item .item .content{
-        margin-left: 3% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -721,17 +721,17 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 13px !important;
+        font-size: 11px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 13px;
+        font-weight: 500;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 11px !important;
+       font-size: 10px !important;
     }
 }
 /*======================================*/
@@ -850,7 +850,7 @@
 
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 4% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .description{
@@ -863,7 +863,7 @@
     }
 
     .left-trending-item .item .content{
-        margin-left: 2% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -1024,7 +1024,7 @@
 
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 3% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .description{
@@ -1037,7 +1037,7 @@
     }
 
     .left-trending-item .item .content{
-        margin-left: 2% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -1206,7 +1206,7 @@
     /*Trending section starts*/
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 2.4% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .description{
@@ -1219,7 +1219,7 @@
     }
 
     .left-trending-item .item .content{
-        margin-left: 2% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .post-image img{
