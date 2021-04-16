@@ -530,7 +530,8 @@
     }
 
     .left-trending-item .item .content{
-        margin-left: 2.4% !important;
+        margin-top: -2% !important;
+        margin-left: 2.2% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -688,7 +689,7 @@
 
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 1.5% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .description{
@@ -701,6 +702,7 @@
     }
 
     .left-trending-item .item .content{
+        margin-top: -2% !important;
         margin-left: 1.8% !important;
     }
 
@@ -721,17 +723,17 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 11px !important;
+        font-size: 13px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 600;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 10px !important;
+       font-size: 11px !important;
     }
 }
 /*======================================*/
@@ -863,6 +865,7 @@
     }
 
     .left-trending-item .item .content{
+        margin-top: -2% !important;
         margin-left: 1.8% !important;
     }
 
@@ -1037,6 +1040,7 @@
     }
 
     .left-trending-item .item .content{
+        margin-top: -2% !important;
         margin-left: 1.8% !important;
     }
 
@@ -1092,18 +1096,18 @@
     }
 
     .header-area .navbar .navbar-nav.ms-auto{
-        margin: 2.5% 0 0 -10% !important;
-        width: 114%;
-        height: 100px;
+        margin: 2.5% 0 0 -14% !important;
+        width: 118%;
+        height: 80px;
         background: #f5f5f5;
     }
 
     .header-area .navbar .navbar-nav button{
         border: none;
         outline: none;
-        background: none;
+        background: #f5f5f5;
         box-shadow: none;
-        color: #f5f5f5;
+        color: #0070ba;
         text-align: left;
     }
 
@@ -1219,6 +1223,7 @@
     }
 
     .left-trending-item .item .content{
+        margin-top: -2% !important;
         margin-left: 1.8% !important;
     }
 
