@@ -3,6 +3,230 @@
 @import url('style.css');
 
 
+
+/*=======================*/
+/*=======================*/
+/*Large Screen Tabs*/
+@media only screen and (max-width: 900px){
+
+    .header-area .navbar .navbar-brand{
+        margin-left: 0.5rem !important; 
+     }
+
+     .header-area .navbar{
+        padding: 1% 0 1% 2%;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2% 0 0 -4% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+       /*Navbar area ends*/
+       .main-site{
+        width: 100vw !important;
+        height: 560px;
+        background: url('/images/image-1.jpg') #222222;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-site .jumbotron{
+        padding-top: 18%;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 19px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 22px !important;
+    }
+
+    .left-trending-item{
+        width: 90vw !important;
+        margin-left: 4% !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 3% !important;
+    }
+
+    .left-trending-item h2{
+        font-size: 25px !important;
+        font-family: var(--roboto);
+    }
+
+
+    .left-trending-item .item .content .username{
+        line-height: 36px !important;
+    }
+
+    
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 20px !important;
+        font-weight: 700;
+        line-height: 30px !important;
+    }
+
+    .left-trending-item .item .content .description p{
+        font-size: 16px !important;
+    }
+    .left-trending-item .item .created span{
+       font-size: 15px !important;
+    }
+}
+
+
+
+
+
+
+/*=======================*/
+/*=======================*/
+/*Large Screen Tablets*/
+@media only screen and (max-width: 768px){
+
+    .header-area .navbar .navbar-brand{
+        margin-left: 0.5rem !important; 
+     }
+
+     .header-area .navbar{
+        padding: 1% 0 1% 2%;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -5% !important;
+        width: 114%;
+        height: 100px;
+        background: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: #0070ba;
+        text-align: left;
+    }
+
+    
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /*Navbar area ends*/
+
+    .main-site{
+        width: 100vw !important;
+        height: 600px;
+        background: url('/images/image-1.jpg') #222222;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-site .jumbotron{
+        padding-top: 18%;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 19px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .info .container-fluid .row .card-info img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .info .container-fluid .row .card-info h3{
+        font-size: 26px !important;;
+    }
+
+    .info .container-fluid .row .card-info p{
+        font-size: 17px !important;
+    }
+
+
+    .dev-community-section .d-comm p{
+        font-size: 20px !important;
+    } 
+
+    .left-trending-item{
+        width: 90vw !important;
+        margin-left: 4% !important;
+    }
+
+    .left-trending-item .item{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .left-trending-item .item .content{
+        margin-left: 3% !important;
+    }
+    
+    .left-trending-item h2{
+        font-size: 24px !important;
+        font-family: var(--roboto);
+    }
+
+    .left-trending-item .item .content .username{
+        line-height: 38px !important;
+    }
+
+    .left-trending-item .item .content .username :is(span, strong){
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    .left-trending-item .item .header :is(strong){
+        font-size: 20px !important;
+        font-weight: 700;
+        line-height: 15px !important;
+    }
+
+    .left-trending-item .item .content .description p{
+        font-size: 16px !important;
+    }
+    .left-trending-item .item .created span{
+       font-size: 15px !important;
+    }
+
+}
+
+
+
 /*======================*/
 /*========================*/
 /*Large Screen - Mobile*/
@@ -45,7 +269,7 @@
     /*Navbar area ends*/
 
     .main-site{
-        width: 600px !important;
+        width: 100vw !important;
         height: 600px;
         background: url('/images/image-1.jpg') #222222;
         background-blend-mode: multiply;
@@ -70,9 +294,9 @@
         position: relative;
         border: 3px solid transparent;
         border-radius: 4px;
-        background: #f5f5f5;
+        background: var(--gradient-color);
         background-clip: padding-box;
-        color: #185074;
+        color: #f5f5f5;
         transition: background 0.6s ease;
         box-shadow: var(--box-shadow);
     }
@@ -107,7 +331,7 @@
     }
 
     .communities{
-        margin-top: 2% !important;
+        margin-top: 8% !important;
     }
 
     .choose-us{
@@ -120,7 +344,7 @@
     }
 
     .left-trending-item{
-        width: 590px;
+        width: 90vw !important;
         margin-left: 4% !important;
     }
 
@@ -150,7 +374,7 @@
     }
 
     .left-trending-item .item .content .username{
-        line-height: 30px !important;
+        line-height: 40px !important;
     }
 
     .left-trending-item .item .content .username :is(span, strong){
@@ -161,7 +385,7 @@
     .left-trending-item .item .header :is(strong){
         font-size: 18px !important;
         font-weight: 700;
-        line-height: 15px !important;
+        line-height: 40px !important;
     }
     .left-trending-item .item .created span i{
        font-size: 13px !important;
@@ -215,8 +439,8 @@
     /*Navbar area ends*/
 
     .main-site{
-        width: 480px !important;
-        height: 550px;
+        width: 100vw !important;
+        height: 540px;
         background: url('/images/image-1.jpg') #222222;
         background-blend-mode: multiply;
         background-repeat: no-repeat;
@@ -245,9 +469,9 @@
         position: relative;
         border: 3px solid transparent;
         border-radius: 4px;
-        background: #f5f5f5;
+        background: var(--gradient-color);
         background-clip: padding-box;
-        color: #185074;
+        color: #f5f5f5;
         transition: background 0.6s ease;
         box-shadow: var(--box-shadow);
     }
@@ -257,7 +481,7 @@
     }
 
     .info .container-fluid .row .card-info h3{
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
 
     .info .container-fluid .row .card-info img{
@@ -272,23 +496,23 @@
     }
 
     .dev-community-section .d-comm h2{
-        font-size: 23px;
+        font-size: 21px !important;
         line-height: 40px;
     }
 
     .dev-community-section .d-comm p{
-        font-size: 17px;
+        font-size: 15px !important;
         line-height: 20px;
     }
  
     .communities .tagline h2{
-        font-size: 23px;
+        font-size: 21px !important;
         text-align: center;
     }
 
     .communities,
     .choose-us{
-        margin-top: 10% !important;
+        margin-top: 14% !important;
     }
 
     .choose-us img{
@@ -296,8 +520,8 @@
     }
 
     .left-trending-item{
-        width: 470px;
-        margin-left: 2% !important;
+        width: 100vw !important;
+        margin-left: 4% !important;
     }
 
     .left-trending-item .item .description{
@@ -314,14 +538,14 @@
     }
 
     .left-trending-item .item .post-image img{
-        width: 80px !important;
-        height: 80px !important;
+        width: 78px !important;
+        height: 78px !important;
         margin-left: 0 !important;
     }
 
     
     .left-trending-item h2{
-        font-size: 19px;
+        font-size: 17px !important;
         font-family: var(--roboto);
     }
 
@@ -330,20 +554,19 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span i{
-       font-size: 12px !important;
+       font-size: 11px !important;
     }
 
-    
 }
 /*======================================*/
 /*====================================*/
@@ -393,8 +616,8 @@
     /*Navbar area ends*/
 
     .main-site{
-        width: 414px !important;
-        height: 550px;
+        width: 100vw !important;
+        height: 540px;
         background: url('/images/image-1.jpg') #222222;
         background-blend-mode: multiply;
         background-repeat: no-repeat;
@@ -412,7 +635,7 @@
 
 
     .main-site .jumbotron p{
-        font-size: 16px !important;
+        font-size: 14px !important;
         color: #f5f5f5 !important;
     }
 
@@ -423,9 +646,9 @@
         position: relative;
         border: 3px solid transparent;
         border-radius: 4px;
-        background: #f5f5f5;
+        background: var(--gradient-color);
         background-clip: padding-box;
-        color: #185074;
+        color: #f5f5f5;
         transition: background 0.6s ease;
         box-shadow: var(--box-shadow);
     }
@@ -445,22 +668,22 @@
     }
 
     .dev-community-section .d-comm h2{
-        font-size: 25px !important;
+        font-size: 22px !important;
         line-height: 40px;
     }
 
     .dev-community-section .d-comm p{
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 26px;
     }
  
     .communities .tagline h2{
-        font-size: 23px;
+        font-size: 21px;
         text-align: center;
     }
 
     .communities{
-        margin-top: 13% !important;
+        margin-top: 15% !important;
     }
 
     .choose-us img{
@@ -468,8 +691,8 @@
     }
 
     .left-trending-item{
-        width: 414px;
-        margin-left: 3% !important;
+        width: 100vw !important;
+        margin-left: 4% !important;
     }
 
     .left-trending-item .item .description{
@@ -486,14 +709,14 @@
     }
 
     .left-trending-item .item .post-image img{
-        width: 80px !important;
-        height: 80px !important;
+        width: 75px !important;
+        height: 75px !important;
         margin-left: 0 !important;
     }
 
     
     .left-trending-item h2{
-        font-size: 19px !important;
+        font-size: 17px !important;
         font-family: var(--roboto);
     }
 
@@ -502,17 +725,17 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 15px !important;
+        font-size: 14px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 12px !important;
+       font-size: 11px !important;
     }
 }
 /*======================================*/
@@ -559,8 +782,8 @@
     /*Navbar area ends*/
 
     .main-site{
-        width: 375px !important;
-        height: 520px;
+        width: 100vw !important;
+        height: 540px;
         background: var(--gradient-color-3);
     }
 
@@ -569,7 +792,7 @@
     }
 
     .main-site .jumbotron h1{
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
 
 
@@ -607,22 +830,22 @@
      }
 
      .dev-community-section .d-comm h2{
-        font-size: 23px !important;
+        font-size: 21px !important;
         line-height: 40px;
     }
 
     .dev-community-section .d-comm p{
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 22px;
     }
  
     .communities .tagline h2{
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
 
     .communities{
-        margin-top: 20% !important;
+        margin-top: 21.9595% !important;
     }
 
     .choose-us img{
@@ -630,8 +853,8 @@
     }
 
     .left-trending-item{
-        width: 370px;
-        margin-left: 2.2% !important;
+        width: 100vw !important;
+        margin-left: 4% !important;
     }
 
     .left-trending-item .item .description{
@@ -655,7 +878,7 @@
 
     
     .left-trending-item h2{
-        font-size: 16px !important;
+        font-size: 14px !important;
         font-family: var(--roboto);
     }
 
@@ -664,17 +887,17 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 14px !important;
+        font-size: 13px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 15px !important;
+        font-size: 14px !important;
         font-weight: 700;
         line-height: 15px !important;
     }
-    .left-trending-item .item .created span i{
-       font-size: 11px !important;
+    .left-trending-item .item .created span{
+       font-size: 10px !important;
     }
 
 }
@@ -723,8 +946,8 @@
     /*Main site starts*/
 
     .main-site{
-        width: 340px !important;
-        height: 520px;
+        width: 100vw !important;
+        height: 540px;
         background: var(--gradient-color-3);
     }
 
@@ -733,12 +956,12 @@
     }
 
     .main-site .jumbotron h1{
-        font-size: 24px !important;
+        font-size: 20px !important;
         line-height: 40px !important;
     }
 
     .main-site .jumbotron p{
-        font-size: 15px !important;
+        font-size: 14px !important;
         color: #f5f5f5 !important;
     }
 
@@ -764,6 +987,14 @@
         height: 150px;
     }
 
+    .info .container-fluid .row .card-info h3{
+        font-size: 20px !important;
+    }
+
+    .info .container-fluid .row .card-info p{
+        font-size: 16px !important;
+    }
+
      /*dev community section starts*/
 
      .dev-community-section{
@@ -776,13 +1007,13 @@
     }
 
     .dev-community-section .d-comm p{
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 22px;
     }
  
     
     .communities .tagline h2{
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -796,8 +1027,8 @@
     }
 
     .left-trending-item{
-        width: 340px;
-        margin-left: 1.8% !important;
+        width: 100vw !important;
+        margin-left: 3% !important;
     }
 
     .left-trending-item .item .description{
@@ -821,7 +1052,7 @@
 
     
     .left-trending-item h2{
-        font-size: 15px !important;
+        font-size: 14px !important;
         font-family: var(--roboto);
     }
 
@@ -835,12 +1066,12 @@
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 14px !important;
+        font-size: 13px !important;
         font-weight: 700;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 11px !important;
+       font-size: 10px !important;
     }
 
 }
@@ -890,21 +1121,21 @@
 
     /*Main - Jumbotron starts*/
     .main-site{
-        width: 320px !important;
-        height: 570px !important;
+        width: 100vw !important;
+        height: 540px !important;
         background: var(--gradient-color-3);
     }
 
     .main-site .jumbotron{
-        padding-top: 20%;
+        padding-top: 21.9595%;
     }
 
     .main-site .jumbotron h3{
-        font-size: 20px !important;
+        font-size: 19px !important;
     }
 
     .main-site .jumbotron p{
-        font-size: 16px;
+        font-size: 14px;
         color: #f5f5f5 !important;
     }
 
@@ -933,6 +1164,14 @@
         width: 150px;
         height: 150px;
     }
+    
+    .info .container-fluid .row .card-info h3{
+        font-size: 18px !important;
+    }
+
+    .info .container-fluid .row .card-info p{
+        font-size: 16px !important;
+    }
     /*Info section ends*/
 
     /*dev community section starts*/
@@ -942,12 +1181,12 @@
     }
 
     .dev-community-section .d-comm h2{
-        font-size: 19px !important;
+        font-size: 17px !important;
         line-height: 40px;
     }
 
     .dev-community-section .d-comm p{
-        font-size: 14px !important;
+        font-size: 13px !important;
         line-height: 20px;
     }
  
@@ -958,7 +1197,7 @@
     }
 
     .communities .tagline h2{
-        font-size: 22px;
+        font-size: 19px;
         text-align: center;
     }
     
@@ -970,8 +1209,8 @@
 
     /*Trending section starts*/
     .left-trending-item{
-        width: 320px;
-        margin-left: 1.8% !important;
+        width: 100vw !important;
+        margin-left: 2.4% !important;
     }
 
     .left-trending-item .item .description{
@@ -994,7 +1233,7 @@
     }
 
     .left-trending-item h2{
-        font-size: 15px !important;
+        font-size: 14px !important;
         font-family: var(--roboto);
     }
 
@@ -1003,17 +1242,17 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 13px !important;
+        font-size: 11px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 14px !important;
+        font-size: 12px !important;
         font-weight: 700;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 11px !important;
+       font-size: 9px !important;
     }
 
     /*Trending Section ends*/   
