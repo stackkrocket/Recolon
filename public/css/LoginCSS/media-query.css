@@ -1,0 +1,711 @@
+@import url('_variable.css');
+@import url('_global.css');
+@import url('login.css');
+
+
+/*=======================*/
+/*=======================*/
+/*Large Screen - Tab Max*/
+@media only screen and (max-width: 900px){
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -8% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+    .login-text{
+        width: 100vw !important;
+    }
+ 
+    .login-text .user-icon{
+        font-size: 26px !important;
+    }
+
+    
+   .form-field{
+    width: 70vw !important;
+}
+
+.container{
+    width: 100% !important;
+    margin: 2vh 15vw 0 15vw !important;
+}
+
+.form-field form input{
+ width: 100% !important;
+ height: 2.5rem !important;
+}
+
+.form-field form p.agreement-text{
+ font-size: 16px !important;
+ text-align: center;
+}
+
+ .social-area{
+     width: 100% !important;
+ }
+
+ .social-area p.alt{
+     font-size: 16px !important;
+ }
+
+ .social-area p.warning-text{
+     font-size: 16px !important;
+ }
+
+ .social-area hr{
+     width: 20vw;
+     height: 2px;
+     color: #525252;
+     margin: 0 auto 0.6rem auto;
+ }
+
+ .social-area p.create-text{
+     font-size: 16px !important;
+     margin-bottom: 0.4rem;
+     text-align: center;
+ }
+
+}
+
+
+
+/*=======================*/
+/*=======================*/
+/*Large Screen - Tab Mini*/
+@media only screen and (max-width: 600px){
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -8% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+    .login-text{
+        width: 100vw !important;
+    }
+ 
+    .login-text .user-icon{
+        font-size: 26px !important;
+    }
+
+    
+   .form-field{
+    width: 80vw !important;
+}
+
+.container{
+    width: 100% !important;
+    margin: 2vh 10vw 0 10vw !important;
+}
+
+.form-field form input{
+ width: 100% !important;
+ height: 2.5rem !important;
+}
+
+.form-field form p.agreement-text{
+ font-size: 16px !important;
+ text-align: center;
+}
+
+ .social-area{
+     width: 100% !important;
+ }
+
+ .social-area p.alt{
+     font-size: 16px !important;
+ }
+
+ .social-area p.warning-text{
+     font-size: 16px !important;
+ }
+
+ .social-area hr{
+     width: 20vw;
+     height: 2px;
+     color: #525252;
+     margin: 0 auto 0.6rem auto;
+ }
+
+ .social-area p.create-text{
+     font-size: 16px !important;
+     margin-bottom: 0.4rem;
+     text-align: center;
+ }
+
+}
+
+
+
+
+/*=======================*/
+/*=======================*/
+/*Large Screen - Mobile*/
+@media only screen and (max-width: 480px){
+   
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -10% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+    .login-text{
+        width: 100vw !important;
+    }
+ 
+    .login-text .user-icon{
+        display: none;
+    }
+
+    
+   .form-field{
+    width: 96vw !important;
+}
+
+.container{
+    width: 100% !important;
+    margin: 2vh 2vw 0 2vw !important;
+}
+
+.form-field form input{
+ width: 100% !important;
+ height: 2.5rem !important;
+}
+
+.form-field form p.agreement-text{
+ font-size: 16px !important;
+ text-align: center;
+}
+
+ .social-area{
+     width: 100% !important;
+ }
+
+ .social-area p.alt{
+     font-size: 16px !important;
+ }
+
+ .social-area p.warning-text{
+     font-size: 16px !important;
+ }
+
+ .social-area hr{
+     width: 20vw;
+     height: 2px;
+     color: #525252;
+     margin: 0 auto 0.6rem auto;
+ }
+
+ .social-area p.create-text{
+     font-size: 16px !important;
+     margin-bottom: 0.4rem;
+     text-align: center;
+ }
+
+}
+
+
+/*=======================*/
+/*=======================*/
+/*Medium Screen - Mobile*/
+@media only screen and (max-width: 414px){
+
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -11% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+    .login-text{
+        width: 100vw !important;
+    }
+ 
+    .login-text .user-icon{
+        display: none;
+    }
+
+    
+   .form-field{
+    width: 96vw !important;
+}
+
+.container{
+    width: 100% !important;
+    margin: 2vh 2vw 0 2vw !important;
+}
+
+.form-field form input{
+ width: 100% !important;
+ height: 2.5rem !important;
+}
+
+.form-field form p.agreement-text{
+ font-size: 15px !important;
+ text-align: center;
+}
+
+ .social-area{
+     width: 100% !important;
+ }
+
+ .social-area p.alt{
+     font-size: 15px !important;
+ }
+
+ .social-area p.warning-text{
+     font-size: 15px !important;
+ }
+
+ .social-area hr{
+     width: 20vw;
+     height: 2px;
+     color: #525252;
+     margin: 0 auto 0.6rem auto;
+ }
+
+ .social-area p.create-text{
+     font-size: 15px !important;
+     margin-bottom: 0.4rem;
+     text-align: center;
+ }
+
+}
+
+
+
+
+
+/*=======================*/
+/*=======================*/
+/*Small Screen - Mobile*/
+@media only screen and (max-width: 375px){
+     /*Header -Navbar Area Starts*/
+     .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -13% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+    .login-text{
+        width: 100vw !important;
+    }
+ 
+    .login-text .user-icon{
+        display: none;
+    }
+
+    
+   .form-field{
+    width: 96vw !important;
+}
+
+.container{
+    width: 100% !important;
+    margin: 2vh 2vw 0 2vw !important;
+}
+
+.form-field form input{
+ width: 100% !important;
+ height: 2.5rem !important;
+}
+
+.form-field form p.agreement-text{
+ font-size: 13px !important;
+ text-align: center;
+}
+
+ .social-area{
+     width: 100% !important;
+ }
+
+ .social-area p.alt{
+     font-size: 14px !important;
+ }
+
+ .social-area p.warning-text{
+     font-size: 14px !important;
+ }
+
+ .social-area hr{
+     width: 20vw;
+     height: 2px;
+     color: #525252;
+     margin: 0 auto 0.6rem auto;
+ }
+
+ .social-area p.create-text{
+     font-size: 14px !important;
+     margin-bottom: 0.4rem;
+     text-align: center;
+ }
+
+}
+
+
+
+
+
+/*=======================*/
+/*=======================*/
+/*Extra Small Screen - Mobile*/
+@media only screen and (max-width: 340px){
+      /*Header -Navbar Area Starts*/
+      .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -13% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+    .login-text{
+        width: 100vw !important;
+    }
+ 
+    .login-text .user-icon{
+        display: none;
+    }
+
+    
+   .form-field{
+    width: 96vw !important;
+}
+
+.container{
+    width: 100% !important;
+    margin: 2vh 2vw 0 2vw !important;
+}
+
+.form-field form input{
+ width: 100% !important;
+ height: 2.5rem !important;
+}
+
+.form-field form p.agreement-text{
+ font-size: 13px !important;
+ text-align: center;
+}
+
+ .social-area{
+     width: 100% !important;
+ }
+
+ .social-area p.alt{
+     font-size: 13px !important;
+ }
+
+ .social-area p.warning-text{
+     font-size: 14px !important;
+ }
+
+ .social-area hr{
+     width: 20vw;
+     height: 2px;
+     color: #525252;
+     margin: 0 auto 0.6rem auto;
+ }
+
+ .social-area p.create-text{
+     font-size: 13px !important;
+     margin-bottom: 0.4rem;
+     text-align: center;
+ }
+
+
+}
+
+
+
+
+/*=======================*/
+/*=======================*/
+/*Extra Small Screen - Mobile*/
+@media only screen and (max-width: 320px){
+     /*Header -Navbar Area Starts*/
+     .header-area .navbar .navbar-brand{
+        display: none;
+    }
+
+    
+    .header-area .navbar{
+        padding: 1% 0;
+        width: 100vw !important;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+        margin: 2.5% 0 0 -13% !important;
+        width: 117%;
+        height: 60px;
+        background: #185074;
+    }
+
+    .header-area .navbar .navbar-nav button{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        color: #f5f5f5;
+        text-align: left;
+    }
+
+    .header-area .navbar .navbar-toggler-icon{
+        background-color: #f5f5f5;
+    }
+
+    .header-area .navbar .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .login-area{
+        width: 100vw !important;
+        height: 100vh !important;
+        margin-top: 10% !important;
+    }
+
+   .login-text{
+       width: 100vw !important;
+   }
+
+   .login-text .user-icon{
+       display: none;
+   }
+
+   .form-field{
+       width: 96vw !important;
+   }
+
+   .container{
+       width: 100% !important;
+       margin: 2vh 2vw 0 2vw !important;
+   }
+
+   .form-field form input{
+    width: 100% !important;
+    height: 2.5rem !important;
+   }
+
+   .form-field form p.agreement-text{
+    font-size: 13px !important;
+    text-align: center;
+}
+
+    .social-area{
+        width: 100% !important;
+    }
+
+    .social-area p.alt{
+        font-size: 13px !important;
+    }
+
+    .social-area p.warning-text{
+        font-size: 14px !important;
+    }
+
+    .social-area hr{
+        width: 20vw;
+        height: 2px;
+        color: #525252;
+        margin: 0 auto 0.6rem auto;
+    }
+
+    .social-area p.create-text{
+        font-size: 13px !important;
+        margin-bottom: 0.4rem;
+        text-align: center;
+    }
+
+}

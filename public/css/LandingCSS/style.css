@@ -268,18 +268,20 @@ html, body{
 }
 
 .content .username span{
-    font: normal 500 16px/2px var(--roboto);
+    font: normal 500 14px/2px var(--roboto);
     color: #424242;
 }
 
 .content .username strong{
-    font: normal 600 17px/20px var(--roboto);
+    font: normal 500 14px/20px var(--roboto);
     color: #424242;
+    line-height: 36px;
 }
 
 .content .header strong{
     font: normal 700 20px/38px var(--roboto);
     color: #424242;
+    line-height: 32px;
 }
 
 .content .description p{

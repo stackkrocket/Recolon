@@ -3,7 +3,6 @@
 @import url('style.css');
 
 
-
 /*=======================*/
 /*=======================*/
 /*Large Screen Tabs*/
@@ -101,9 +100,6 @@
        font-size: 14px !important;
     }
 }
-
-
-
 
 
 
@@ -1092,7 +1088,7 @@
 
     .header-area .navbar{
         padding: 1% 0;
-        width: 320px;
+        width: 100vw !important;
     }
 
     .header-area .navbar .navbar-nav.ms-auto{
@@ -1105,9 +1101,9 @@
     .header-area .navbar .navbar-nav button{
         border: none;
         outline: none;
-        background: #f5f5f5;
+        background: none;
         box-shadow: none;
-        color: #0070ba;
+        color: #f5f5f5;
         text-align: left;
     }
 

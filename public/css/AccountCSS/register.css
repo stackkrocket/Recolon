@@ -1,0 +1,188 @@
+@import url('_variable.css');
+
+/*Header area starts*/
+.header-area .navbar{
+    background: #185074;
+    padding: 1rem 8rem;
+}
+
+.header-area .navbar .navbar-brand{
+    padding: 0.2rem 0.5rem;
+    color: #f5f5f5;
+    font-size: 21.5px;
+    font-weight: 600;
+}
+
+.button{
+    padding: 0.6rem 2rem;
+    margin: 0 1.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.button-secondary{
+    background: #f5f5f5;
+    background-clip: padding-box;
+    color: #424242;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.button-secondary:hover{
+    background: #dfdfdf;
+    background-clip: padding-box;
+    color: #424242;
+}
+
+.button.button-secondary::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: #f5f5f5;
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+/*Header area ends*/
+
+.register-area{
+    width: 100%;
+    height: 100vh;
+}
+
+.register-area .brand-tag{
+    margin: 2.5% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #185074;
+}
+
+.register-area h2{
+    padding-top: 0.8rem;
+    font: normal 600 21px/24px var(--roboto);
+    text-align: center;
+    color: #185074;
+}
+
+.register-area h3{
+    font: normal 500 16px/24px var(--roboto);
+    text-align: center;
+    color: #185074;
+    padding-top: 0.6rem;
+}
+
+.container{
+    width: 35vw;
+}
+
+.form-field input{
+    height: 2.5rem !important;
+    font: normal 500 16px/24px var(--roboto);
+    color: #424242;
+}
+
+.password-input{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+}
+
+.password-input input{
+    border: 0;
+    border-radius: 3px;
+}
+
+.password-input span{
+    padding-right: 5px;
+    font-size: 26px;
+    color: #cec4da;
+    cursor: pointer;
+}
+
+.password-input span:hover{
+    color: #b1b2b6;
+}
+
+.agreement-text{
+    color: #424242;
+    font: normal 500 13px/20px var(--roboto);
+}
+
+.agreement-text a{
+    text-decoration: none;
+    color: #0070ba;
+}
+
+.button.button-submit{
+    background: #00b4ac;
+    color: #f5f5f5;
+    font: normal 600 16px/16px var(--roboto);
+    transform: translateZ(0);
+    transition: 0.3s ease;
+}
+
+.button.button-submit:hover,
+.button.button-submit:active,
+.button.button-submit:focus{
+    transform: scale(1.09);
+    background: #00968e;
+}
+
+.button.button-google{
+    background: #db4437;
+    color: #f5f5f5;
+    font: normal 500 16px var(--roboto);
+    transform: translateZ(0);
+    transition: 0.3s ease;
+}
+
+.button.button-google:hover,
+.button.button-google:active,
+.button.button-google:focus{
+    transform: scale(0.98);
+    background: #db4437;
+    opacity: 0.8;
+}
+
+.button.button-facebook{
+    background: #4267b2;
+    color: #f5f5f5;
+    font: normal 500 16px var(--roboto);
+    transform: translateZ(0);
+    transition: 0.3s ease;
+}
+
+.button.button-facebook:hover,
+.button.button-facebook:active,
+.button.button-facebook:focus{
+    transform: scale(0.98);
+    background: #4267b2;
+    opacity: 0.8;
+}
+
+.social-area p{
+    text-align: center;
+    font: normal 500 16px/24px var(--roboto);
+    color: #424242;
+}
+
+.social-area p.warning-text{
+    text-align: center;
+    font: normal 500 16px/28px var(--roboto);
+    color: #424242;
+}
+
+.social-area hr{
+    width: 5vw;
+    height: 2px;
+    color: #525252;
+    margin-left: 40%;
+}
+
+.social-area .login-text{
+    font: normal 500 16px/10px var(--roboto);
+}
