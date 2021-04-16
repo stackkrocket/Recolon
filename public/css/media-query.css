@@ -89,8 +89,8 @@
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 20px !important;
-        font-weight: 700;
+        font-size: 19px !important;
+        font-weight: 600;
         line-height: 30px !important;
     }
 
@@ -98,7 +98,7 @@
         font-size: 16px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 15px !important;
+       font-size: 14px !important;
     }
 }
 
@@ -206,13 +206,13 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 16px !important;
+        font-size: 15px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 20px !important;
-        font-weight: 700;
+        font-size: 19px !important;
+        font-weight: 600;
         line-height: 15px !important;
     }
 
@@ -220,7 +220,7 @@
         font-size: 16px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 15px !important;
+       font-size: 14px !important;
     }
 
 }
@@ -383,12 +383,12 @@
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 18px !important;
-        font-weight: 700;
+        font-size: 17px !important;
+        font-weight: 600;
         line-height: 40px !important;
     }
     .left-trending-item .item .created span i{
-       font-size: 13px !important;
+       font-size: 12px !important;
     }
 
 }
@@ -545,7 +545,7 @@
 
     
     .left-trending-item h2{
-        font-size: 17px !important;
+        font-size: 16px !important;
         font-family: var(--roboto);
     }
 
@@ -554,13 +554,13 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 154x;
+        font-weight: 600;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span i{
@@ -725,13 +725,13 @@
     }
 
     .left-trending-item .item .content .username :is(span, strong){
-        font-size: 14px !important;
+        font-size: 13px !important;
         font-weight: 500;
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 600;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
@@ -892,8 +892,8 @@
     }
 
     .left-trending-item .item .header :is(strong){
-        font-size: 14px !important;
-        font-weight: 700;
+        font-size: 13px !important;
+        font-weight: 600;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
@@ -1067,7 +1067,7 @@
 
     .left-trending-item .item .header :is(strong){
         font-size: 13px !important;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
@@ -1248,11 +1248,11 @@
 
     .left-trending-item .item .header :is(strong){
         font-size: 12px !important;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 15px !important;
     }
     .left-trending-item .item .created span{
-       font-size: 9px !important;
+       font-size: 10px !important;
     }
 
     /*Trending Section ends*/   
