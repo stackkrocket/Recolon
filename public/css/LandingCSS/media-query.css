@@ -3,6 +3,86 @@
 @import url('style.css');
 
 
+
+
+/*=======================*/
+/*=======================*/
+/*Small screen PCs*/
+@media only screen and (max-width: 1024px){
+
+       /*Navbar area ends*/
+       .main-site{
+        width: 100vw !important;
+        height: 560px;
+        background: url('/images/image-1.jpg') #222222;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-site .jumbotron{
+        padding-top: 18%;
+    }
+
+    .main-site .jumbotron p{
+        font-size: 19px !important;
+        color: #f5f5f5 !important;
+    }
+
+    .dev-community-section .d-comm p{
+        font-size: 22px !important;
+    }
+
+    .left-trending-item{
+        width: 90vw !important;
+    }
+
+    .left-trending-item h2{
+        font-size: 25px !important;
+        font-family: var(--roboto);
+    }
+
+
+    .left-trending-item .item .content .username h5{
+        font-size: 16px !important;
+        color: #000000;
+    }
+
+    .left-trending-item .item .header{
+        width: 70vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    .left-trending-item .item .description{
+        width: 70vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .left-trending-item .item .description p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .left-trending-item .item .created span{
+       font-size: 13px !important;
+    }
+}
+
+
+
+
 /*=======================*/
 /*=======================*/
 /*Large Screen Tabs*/
@@ -64,11 +144,6 @@
 
     .left-trending-item{
         width: 90vw !important;
-        margin-left: 4% !important;
-    }
-
-    .left-trending-item .item .content{
-        margin-left: 3% !important;
     }
 
     .left-trending-item h2{
@@ -77,27 +152,39 @@
     }
 
 
-    .left-trending-item .item .content .username{
-        line-height: 36px !important;
-    }
-
-    
-    .left-trending-item .item .content .username :is(span, strong){
+    .left-trending-item .item .content .username h5{
         font-size: 16px !important;
-        font-weight: 500;
+        color: #000000;
     }
 
-    .left-trending-item .item .header :is(strong){
-        font-size: 19px !important;
-        font-weight: 600;
-        line-height: 30px !important;
+    .left-trending-item .item .header{
+        width: 66vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
+        font-size: 18px !important;
+        line-height: 19px !important;
     }
 
-    .left-trending-item .item .content .description p{
-        font-size: 16px !important;
+    .left-trending-item .item .description{
+        width: 66vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
+
+    .left-trending-item .item .description p{
+        font-size: 16px;
+        line-height: 20px;;
+    }
+
     .left-trending-item .item .created span{
-       font-size: 14px !important;
+       font-size: 12px !important;
     }
 }
 
@@ -187,38 +274,46 @@
         display: flex !important;
         flex-direction: row !important;
     }
-
-    .left-trending-item .item .content{
-        margin-left: 3% !important;
-    }
     
     .left-trending-item h2{
         font-size: 24px !important;
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 38px !important;
-    }
-
-    .left-trending-item .item .content .username :is(span, strong){
-        font-size: 15px !important;
-        font-weight: 500;
-    }
-
-    .left-trending-item .item .header :is(strong){
-        font-size: 19px !important;
-        font-weight: 600;
-        line-height: 15px !important;
-    }
-
-    .left-trending-item .item .content .description p{
+    .left-trending-item .item .content .username h5{
         font-size: 16px !important;
-    }
-    .left-trending-item .item .created span{
-       font-size: 14px !important;
+        color: #000000;
     }
 
+    .left-trending-item .item .header{
+        width: 66vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
+        font-size: 17px !important;
+        line-height: 19px !important;
+    }
+
+    .left-trending-item .item .description{
+        width: 66vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .left-trending-item .item .description p{
+        font-size: 16px;
+        line-height: 20px;;
+    }
+
+    .left-trending-item .item .created span{
+       font-size: 12px !important;
+    }
 }
 
 
@@ -344,17 +439,9 @@
         margin-left: 4% !important;
     }
 
-    .left-trending-item .item .description{
-        display: none;
-    }
-
     .left-trending-item .item{
         display: flex !important;
         flex-direction: row !important;
-    }
-
-    .left-trending-item .item .content{
-        margin-left: 3% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -369,23 +456,28 @@
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 40px !important;
+    .left-trending-item .item .content .username h5{
+        font-size: 14px !important;
+        color: #000000;
     }
 
-    .left-trending-item .item .content .username :is(span, strong){
-        font-size: 16px !important;
-        font-weight: 500;
+    .left-trending-item .item .header{
+        width: 67vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
+        font-size: 15px !important;
+        line-height: 19px !important;
     }
 
-    .left-trending-item .item .header :is(strong){
-        font-size: 17px !important;
-        font-weight: 600;
-        line-height: 40px !important;
+    .left-trending-item .item .created span{
+       font-size: 11px !important;
     }
-    .left-trending-item .item .created span i{
-       font-size: 12px !important;
-    }
+
 
 }
 
@@ -517,7 +609,7 @@
 
     .left-trending-item{
         width: 100vw !important;
-        margin-left: 2% !important;
+        margin-left: 1.8% !important;
     }
 
     .left-trending-item .item .description{
@@ -530,8 +622,8 @@
     }
 
     .left-trending-item .item .content{
-        margin-top: -3.5% !important;
-        margin-left: 2.2% !important;
+        margin-top: -1.5% !important;
+        margin-left: 2% !important;
     }
 
     .left-trending-item .item .post-image img{
@@ -546,21 +638,26 @@
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 30px !important;
+    .left-trending-item .item .content .username h5{
+        font-size: 13px !important;
+        color: #000000;
     }
 
-    .left-trending-item .item .content .username :is(span, strong){
-        font-size: 13px;
-        font-weight: 500;
+    .left-trending-item .item .header{
+        width: 67vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
+        font-size: 13px !important;
+        line-height: 19px !important;
     }
 
-    .left-trending-item .item .header :is(strong){
-        font-size: 154x;
-        font-weight: 600;
-        line-height: 15px !important;
-    }
-    .left-trending-item .item .created span i{
+
+    .left-trending-item .item .created span{
        font-size: 11px !important;
     }
 
@@ -701,11 +798,6 @@
         flex-direction: row !important;
     }
 
-    .left-trending-item .item .content{
-        margin-top: -3.5% !important;
-        margin-left: 1.8% !important;
-    }
-
     .left-trending-item .item .post-image img{
         width: 75px !important;
         height: 75px !important;
@@ -718,22 +810,27 @@
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 22px !important;
-    }
-
-    .left-trending-item .item .content .username :is(span, strong){
+    .left-trending-item .item .content .username h5{
         font-size: 13px !important;
-        font-weight: 500;
+        color: #000000;
     }
 
-    .left-trending-item .item .header :is(strong){
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 15px !important;
+    .left-trending-item .item .header{
+        width: 68vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
+        font-size: 13px !important;
+        line-height: 19px !important;
     }
+
+
     .left-trending-item .item .created span{
-       font-size: 11px !important;
+       font-size: 10px !important;
     }
 }
 /*======================================*/
@@ -864,11 +961,6 @@
         flex-direction: row !important;
     }
 
-    .left-trending-item .item .content{
-        margin-top: -3.5% !important;
-        margin-left: 1.8% !important;
-    }
-
     .left-trending-item .item .post-image img{
         width: 70px !important;
         height: 70px !important;
@@ -881,20 +973,25 @@
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 22px !important;
+    .left-trending-item .item .content .username h5{
+        font-size: 12px !important;
+        color: #000000;
     }
 
-    .left-trending-item .item .content .username :is(span, strong){
+    .left-trending-item .item .header{
+        width: 70vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
+
+    .left-trending-item .item .header h4{
         font-size: 13px !important;
-        font-weight: 500;
+        line-height: 19px !important;
     }
 
-    .left-trending-item .item .header :is(strong){
-        font-size: 13px !important;
-        font-weight: 600;
-        line-height: 15px !important;
-    }
+
     .left-trending-item .item .created span{
        font-size: 10px !important;
     }
@@ -946,12 +1043,12 @@
 
     .main-site{
         width: 100vw !important;
-        height: 540px;
+        height: 520px;
         background: var(--gradient-color-3);
     }
 
     .main-site .jumbotron{
-        padding-top: 22%;
+        padding-top: 23%;
     }
 
     .main-site .jumbotron h1{
@@ -1039,11 +1136,6 @@
         flex-direction: row !important;
     }
 
-    .left-trending-item .item .content{
-        margin-top: -3.5% !important;
-        margin-left: 1.8% !important;
-    }
-
     .left-trending-item .item .post-image img{
         width: 70px !important;
         height: 70px !important;
@@ -1056,20 +1148,25 @@
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 22px !important;
+    .left-trending-item .item .content .username h5{
+        font-size: 11px !important;
+        color: #000000;
     }
 
-    .left-trending-item .item .content .username :is(span, strong){
-        font-size: 13px !important;
-        font-weight: 500;
-    }
+    .left-trending-item .item .header{
+        width: 70vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    } 
 
-    .left-trending-item .item .header :is(strong){
+    .left-trending-item .item .header h4{
         font-size: 13px !important;
-        font-weight: 600;
         line-height: 15px !important;
     }
+
+
     .left-trending-item .item .created span{
        font-size: 10px !important;
     }
@@ -1122,7 +1219,7 @@
     /*Main - Jumbotron starts*/
     .main-site{
         width: 100vw !important;
-        height: 540px !important;
+        height: 520px !important;
         background: var(--gradient-color-3);
     }
 
@@ -1222,11 +1319,6 @@
         flex-direction: row !important;
     }
 
-    .left-trending-item .item .content{
-        margin-top: -3.5% !important;
-        margin-left: 1.8% !important;
-    }
-
     .left-trending-item .item .post-image img{
         width: 70px !important;
         height: 70px !important;
@@ -1238,22 +1330,27 @@
         font-family: var(--roboto);
     }
 
-    .left-trending-item .item .content .username{
-        line-height: 22px !important;
+    .left-trending-item .item  .username h5{
+       font-size: 11px !important;
+       color: #000000;
     }
 
-    .left-trending-item .item .content .username :is(span, strong){
-        font-size: 11px !important;
-        font-weight: 500;
+    .left-trending-item .item .header{
+        width: 70vw;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
-    .left-trending-item .item .header :is(strong){
-        font-size: 12px !important;
-        font-weight: 600;
+    .left-trending-item .item .header h4{
+        font-size: 13px !important;
         line-height: 15px !important;
     }
+    
     .left-trending-item .item .created span{
        font-size: 10px !important;
+
     }
 
     /*Trending Section ends*/   

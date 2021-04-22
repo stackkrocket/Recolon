@@ -139,56 +139,56 @@
       <h2>Explore communities</h2>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="comm-items">
           <i class="fas fa-code-branch"></i><hr>
           <h3>Programming</h3>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="comm-items">
           <i class="fas fa-laptop-code"></i><hr>
           <h3>Web Development</h3>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-6">
        <div class="comm-items">
           <i class="fab fa-uncharted"></i><hr>
           <h3>Software Engineering</h3>
        </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="comm-items">
            <i class="fas fa-tram"></i><hr>
            <h3>Machine Learning</h3>
         </div>
        </div>
 
-       <div class="col-lg-4 col-md-6 col-sm-12">
+       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="comm-items">
            <i class="fas fa-database"></i><hr>
            <h3>Data Science</h3>
         </div>
        </div>
 
-       <div class="col-lg-4 col-md-6 col-sm-12">
+       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="comm-items">
            <i class="fas fa-shield-alt"></i><hr>
            <h3>Cyber Security</h3>
         </div>
        </div>
 
-       <div class="col-lg-4 col-md-6 col-sm-12">
+       <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="comm-items">
            <i class="fab fa-dev"></i><hr>
            <h3>Dev Ops</h3>
         </div>
        </div>
 
-       <div class="col-lg-4 col-md-6 col-sm-12">
+       <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="comm-items">
            <i class="fas fa-cog"></i><hr>
            <h3>Testing</h3>
@@ -245,20 +245,21 @@
                <img src="<%= post.image %>" alt="">
              </div>
      
-             <div class="content" style="margin-left: 5%;">
-               <div class="username">
-                 <span>By</span> <strong><%= post.author.username %> <%= post.author.lastName %></strong>
+             <div class="content" style="margin-left: 2.5%;">
+               <div class="username pt-1">
+                 <h5><%= post.author.username %> <%= post.author.lastName %> <span>in </span> Programming</h5>
                </div>
-               <div class="header">
-                 <strong><%= post.title.substring(0, 50) %>...</strong>
+
+               <div class="header pt-3"> 
+                 <h4><%= post.title %> </h4>
                </div>
-     
+
                <div class="description">
-                 <p><%- post.content.substring(0, 100) %>...</p>
+                 <p><%- post.content.substring(0, 100) %>... </p>
                </div>
-  
-               <div class="created" style="padding-top: 5px;">
-                 <span><%= post.created.toDateString() %> - 8 min read <i class="far fa-star" style="padding-left: 10px; font-size: 18px;"></i></span>
+
+               <div class="created pt-2">
+                 <span><%= post.created.toDateString() %> - 8 min read <i style="padding-left: 2rem;" class="far fa-star"></i></span>
                </div>
              </div>
            </div>

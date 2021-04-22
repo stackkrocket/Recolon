@@ -26,16 +26,17 @@
 
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="/css/home.css">    
+    <link rel="stylesheet" href="/css/HomeCSS/home.css">
+    <link rel="stylesheet" href="/css/HomeCSS/home.css">    
 </head>
 <body>
 
 
   <!--Navbar starts-->
     <section class="header-area">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="far fa-edit" style="font-size: 26px;"></i>Recolon</a>
+          <a class="navbar-brand" href="#"><i class="far fa-edit" style="font-size: 21px;"></i>Recolon</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,7 +45,7 @@
               <button class="btn button button-write"><i style="padding-right: 5px;" class="fas fa-plus-circle"></i>Write</button>
               <button class="btn"><i style="color: #ffffff;" class="fas fa-cog"></i></button>
               <button class="btn"><i style="color: #ffffff;" class="fas fa-bell"></i></button>
-              <button class="btn"><a href="#">Logout</a></button>
+              <button class="btn"><a href="/recolon/accounts/logout">Logout</a></button>
             </ul>
           </div>
         </div>
@@ -52,41 +53,98 @@
     </section>
   <!--Navbar ends-->
 
-<!--aside section start-->
-<section class="aside-area">
-<aside class="sidebar">
-  <div class="toggle">
-    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-      <span></span>
-    </a>
-  </div>
+  
+  <!--Main site section-->
 
-  <div class="side-inner">
-    <div class="profile">
-      <img src="/images/image-2.jpg" alt="Image" class="img-fluid">
-      <h3 class="name">Okehi Usman</h3>
-      <span class="country">Okene, Nigeria</span>
-    </div>
+  <main class="main-site">
 
-    <div class="counter d-flex justify-content-center">
-      <div class="col">
-        <strong class="number">862</strong>
-        <span class="number-label">Posts</span>
+    <!--Aside section starts-->
+    <aside class="aside-area col-lg-3">
+      <div class="container container-fluid">
+        <div class="side-nav-content">
+          <div class="row">
+
+           <div class="profile-area mt-5">
+             <div class="col-12">
+               <div class="rounded-image">
+                 <img src="/images/image-2.jpg" class="img-fluid" alt="">
+               </div>
+              <div class="profile-details mt-4">
+                <h3><a href="#"><%= currentUser.username %> <%= currentUser.lastName %> </a></h3>
+                <p>
+                  Full stack developer. Teacher. Gamer. Lorem, ipsum. Lorem, ipsum. Lorem, ipsum.
+                  Lorem, ipsum. Lorem, ipsum. Lorem, ipsum dolor.
+                </p>
+
+                <div class="mt-2">
+                  <button>Follow</button>
+                </div>
+
+                <div class="mt-4 more-info">
+                  <h3>Work</h3>
+                  <p>Full Stack Web Developer at <a href="#">The Lazy Place Inc.</a></p>
+
+                  <h3>Location</h3>
+                  <p>Abuja, Nigeria</p>
+
+                  <h3>Education</h3>
+                  <p>Federal University Of Tech. Minna</p>
+
+                  <h3>Joined</h3>
+                  <p>October, 2021</p>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
+    <section class="content-area col-lg-9">
+      <div class="welcome-message mt-5">
+        <h4>Welcome, <%= currentUser.username %></h4>
+        <p>Here is a quick start guide. Write. Publish and Mentor.</p>
       </div>
 
-      <div class="col">
-        <strong class="number">22.5k</strong>
-        <span class="number-label">Followers</span>
+      <div class="activity-message mt-5">
+        <div class="left pt-3">
+          <h3>Drive Some Activity To Your Feed.</h3>
+          <p>Your feed will be populated with contents from communities you follow and as well as your follower's interaction</p>
+          <button class="mt-4">Populate Your Feed</button>
+        </div>
+
+        <div class="right">
+          <img src="/svgs/svg-13.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+      
+
+      <div class="social-integration mt-5">
+        <div class="helpful-info">
+          <h3 class="pt-4">Reach A Wider Audience</h3>
+          <img src="/svgs/svg-10.svg" class="img-fluid" alt="">
+          <p class="pt-2">Easily integrate your social media accounts to reach a wider audience for your content</p>
+          <button>Connect Social Accounts</button>
+        </div>
       </div>
 
-      <div class="col">
-        <strong class="number">150</strong>
-      </div>      
-    </div>
-  </div>
-</aside>
-</section>
-<!--aside section ends-->
+      
+
+    </section>
+
+
+
+
+  </main>
+
+
+
+
+
+
+
 
 
     <!--Javascript animate-on-scroll library-->
