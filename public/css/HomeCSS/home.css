@@ -261,7 +261,7 @@ button .profile{
 
 .links{
     width: 30%;
-    height: 60vh;
+    height: auto;
     float: right;
     background: #ffffff;
     box-shadow: -1px -1px 1.3232px 1.1515px rgba(204, 204, 204, 0.8), 1px 1px 1.3232px 1.1515px rgba(204, 204, 204, 0.8);
