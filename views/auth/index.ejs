@@ -27,7 +27,7 @@
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="/css/HomeCSS/home.css">
-    <link rel="stylesheet" href="/css/HomeCSS/home.css">    
+    <link rel="stylesheet" href="/css/HomeCSS/media-query.css">    
 </head>
 <body>
 
@@ -36,15 +36,16 @@
     <section class="header-area">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="far fa-edit" style="font-size: 21px;"></i>Recolon</a>
+          <a class="navbar-brand" href="#"><i class="far fa-edit" style="font-size: 21px;"></i><span>Recolon</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <button class="btn button button-write"><i style="padding-right: 5px;" class="fas fa-plus-circle"></i>Write</button>
+              <button onclick="location.href='/recolon/new'" class="btn button button-write"><i style="padding-right: 5px;" class="fas fa-plus-circle"></i>Write</button>
               <button class="btn"><i style="color: #ffffff;" class="fas fa-cog"></i></button>
               <button class="btn"><i style="color: #ffffff;" class="fas fa-bell"></i></button>
+              <button class="btn profile"><a href="#">Profile</a></button>
               <button class="btn"><a href="/recolon/accounts/logout">Logout</a></button>
             </ul>
           </div>
@@ -102,17 +103,17 @@
     </aside>
 
 
-    <section class="content-area col-lg-9">
-      <div class="welcome-message mt-5">
+    <section class="content-area col-lg-9 col-sm-12">
+      <div class="welcome-message mt-5 mr-o">
         <h4>Welcome, <%= currentUser.username %></h4>
         <p>Here is a quick start guide. Write. Publish and Mentor.</p>
       </div>
 
-      <div class="activity-message mt-5">
-        <div class="left pt-3">
-          <h3>Drive Some Activity To Your Feed.</h3>
+      <div class="activity-message mt-3">
+        <div class="left pt-5">
+          <h3>Drive Some Activity To Your Feed</h3>
           <p>Your feed will be populated with contents from communities you follow and as well as your follower's interaction</p>
-          <button class="mt-4">Populate Your Feed</button>
+          <button class="mt-4">Get started</button>
         </div>
 
         <div class="right">
@@ -121,20 +122,29 @@
       </div>
       
 
-      <div class="social-integration mt-5">
+      <div class="social-integration mt-4">
         <div class="helpful-info">
-          <h3 class="pt-4">Reach A Wider Audience</h3>
+          <h3 class="pt-3">Reach a wider audience</h3>
           <img src="/svgs/svg-10.svg" class="img-fluid" alt="">
           <p class="pt-2">Easily integrate your social media accounts to reach a wider audience for your content</p>
           <button>Connect Social Accounts</button>
         </div>
       </div>
 
-      
+      <div class="links">
+        <ul class="link-box">
+          <li class="active"><i class="fas fa-home"></i> Home</li>
+          <li><i class="fas fa-rss"></i>Feed <i class="fas fa-chevron-right"></i></li>
+          <li><i class="fab fa-leanpub"></i> Followers <i class="fas fa-chevron-right"></i></li>
+          <li><i class="fas fa-chart-line"></i>Stats <i class="fas fa-chevron-right"></i></li>
+          <li><i class="fas fa-thumbtack"></i> Your Posts <i class="fas fa-chevron-right"></i></li>
+          <li><i class="far fa-star"></i>Likes <i class="fas fa-chevron-right"></i></li>
+          <li><i class="far fa-comment"></i> Comments <i class="fas fa-chevron-right"></i></li>
+          <li><i class="fas fa-user-alt"></i> Profile <i class="fas fa-chevron-right"></i></li>
+        </ul>
+      </div>
 
     </section>
-
-
 
 
   </main>
