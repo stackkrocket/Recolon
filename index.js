@@ -9,6 +9,32 @@ const localStrategy = require('passport-local');
 const genuuid = require('uuid').v4;
 const passportLocalMongoose = require('passport-local-mongoose');
 const mongoStore = require('connect-mongo')(session)
+const multer = require('multer');
+
+// Define disk storage for multer
+const storage = multer.diskStorage({
+    //File destination
+    destination: function(req, file, callback){
+        callback(null, './public/uploads/images')
+    },
+    /*By default, multer strips off file extension.  
+    This code block adds back the file's original extension
+    */
+   filename: function(req, file, callback){
+    callback(null, Date.now() + file.originalname);
+   }
+})
+//
+
+//Uploads for multer
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024*1024*5
+    }
+})
+
+const morgan = require('morgan');
 const ejs = require('ejs');
 const app = express();
 
@@ -21,7 +47,7 @@ const User = require('./models/user');
 const authRoute = require('./routes/auth'),
     blogsRoute = require('./routes/post'),
     commentRoute = require('./routes/comments'),
-    activityRoute = require('./routes/activity')
+    activityRoute = require('./routes/activity');
 
 //-----Packages Configure-------//
 
@@ -55,6 +81,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(flash());
 app.use(methodOverride('_method'));
+app.use(morgan('dev'));
 app.set('view engine', 'ejs');
 app.set('trust proxy', 1)
 app.use(express.static(__dirname + '/public'));

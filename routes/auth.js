@@ -43,7 +43,7 @@ router.post('/recolon/accounts/register', authController.create_user);
 router.get('/recolon/accounts/login', authController.login_user_form);
 
 router.post('/recolon/accounts/login', passport.authenticate('local', {
-    successRedirect: '/recolon/auth/user/index/feed',
+    successRedirect: '/recolon/auth/index',
     failureRedirect: '/recolon/accounts/login',
     failureMessage: 'An error occurred'
 }), function(req, res){})

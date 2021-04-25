@@ -7,6 +7,31 @@ const Post = require('../models/post')
 //include post controller
 const postController = require('../controllers/postController');
 
+
+const multer = require('multer');
+// Define disk storage for multer
+const storage = multer.diskStorage({
+    //File destination
+    destination: function(req, file, callback){
+        callback(null, './public/uploads/images')
+    },
+    /*By default, multer strips off file extension.  
+    This code block adds back the file's original extension
+    */
+   filename: function(req, file, callback){
+    callback(null, Date.now() + file.originalname);
+   }
+})
+//
+
+//Uploads for multer
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024*1024*5
+    }
+})
+
 //check for authentication middleware
 const isUserAuthenticated = (req, res, next) => {
     if(req.isAuthenticated()){
@@ -57,7 +82,7 @@ router.get('/recolon/auth/user/index/feed', isUserAuthenticated, postController.
 router.get('/recolon/new', isUserAuthenticated, postController.create_post_form);
 
 //Submit a POST request to the server
-router.post('/recolon/new', isUserAuthenticated, postController.create_post);
+router.post('/recolon/new', isUserAuthenticated, upload.single('image'), postController.create_post);
 
 //=====show page route===//
 router.get('/recolon/:id', isUserAuthenticated, postController.show_page);

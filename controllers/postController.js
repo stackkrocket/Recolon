@@ -1,4 +1,28 @@
 const Post = require('../models/post')
+const multer = require('multer');
+
+// Define disk storage for multer
+const storage = multer.diskStorage({
+    //File destination
+    destination: function(req, file, callback){
+        callback(null, './public/uploads/images')
+    },
+    /*By default, multer strips off file extension.  
+    This code block adds back the file's original extension
+    */
+   filename: function(req, file, callback){
+    callback(null, Date.now() + file.originalname);
+   }
+})
+//
+
+//Uploads for multer
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024*1024*5
+    }
+})
 
 //error code
 const errFunc = () =>{
@@ -33,7 +57,7 @@ exports.create_post_form = (req, res, next) => {
 //Fetch input from form and create post
 exports.create_post = (req, res, next) => {
     const title = req.body.title;
-    const image = req.body.image;
+    const image = req.file.filename;
     const content = req.body.content;
     const author = {id: req.user._id, username: req.user.username, lastName: req.user.lastName}
 
@@ -41,9 +65,9 @@ exports.create_post = (req, res, next) => {
 
     Post.create(newPost, (err, newPost) => {
         if(err){
-           errFunc();
+          throw new Error('Could not publish post at this moment');
         }
-        res.redirect('/recolon/auth/user/index/feed')
+        res.redirect('/recolon/auth/user/feed')
     })
 }
 

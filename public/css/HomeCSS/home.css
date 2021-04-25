@@ -1,5 +1,9 @@
 @import url('_variable.css');
 
+
+body{
+    background: #f6f7f7;
+}
 /*navbar starts*/
 
 .header-area .navbar{

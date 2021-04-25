@@ -1,0 +1,222 @@
+@import url('_variable.css');
+
+
+/*Reset starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box-sizing;
+}
+
+html, body{
+    line-height: 1.2;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #efefef;
+}
+
+.header-area .navbar{
+    height: 3rem;
+    background: #185074;
+    padding: 1rem 4rem;
+}
+
+.header-area .navbar .navbar-brand{
+    color: #f5f5f5;
+    font: normal 600 21.5px var(--roboto);
+    padding: 0.2rem 0.5rem;
+}
+
+.button{
+    padding: 0.3rem 0.8rem;
+    margin: 0 1.2rem;
+    font: normal 500 15px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar .navbar-nav button a{
+    color: #ffffff;
+    font: normal 500 15px var(--roboto);
+}
+/*Navbar ends*/
+
+
+.w-container{
+    width: 100%;
+    height: 100%;
+}
+
+.aside-container{
+    width: 22%;
+    height: 100%;
+    margin: 4.5% 0 0 0;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.aside-container .info-container{
+    width: 90%;
+    margin: 10% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-container .info{
+    width: 100%;
+    height: 160px;
+    margin-top: 3%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.main-container{
+    width: 78%;
+    height: 100%;
+    float: right;
+    margin-top: 4.5%;
+    position: relative;
+}
+
+.main-container .editing-area{
+    width: 90%;
+    height: auto;
+    margin: 3% 5% 0 5%;
+    background: #fdfdfd;
+    box-shadow: -4px -4px 2.5px 3.5px #eee, 4px 4px 2.5px 3.5px #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.editing-area form .form:nth-child(1),
+.editing-area form .form:nth-child(2){
+    width: 80%;
+    margin: 3.5565% 18% 0 18%;
+}
+
+.editing-area form .form{
+    margin: 3%  0 0 15%;
+}
+
+
+.form input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-indent: 40px;
+    letter-spacing: 1.2px;
+}
+
+.form .title-field{
+    font-size: 38px;
+}
+
+.form .image-field{
+    font-size: 28px;
+}
+
+.form .title-field::placeholder{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #1a1a1a;
+    opacity: 0.5;
+}
+
+
+.btn-group{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 8% 0 0 15%;
+}
+
+
+.btn-group button.ui.button{
+    width: 150px;
+    height: 46px;
+    margin-left: 10px;
+}
+
+.image-upload::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  .image-upload::before {
+    content: 'Image here';
+    display: inline;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #1a1a1a;
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .image-upload:hover::before {
+    border-color: rgb(153, 138, 138);
+  }
+  .image-upload:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+  label{
+    font-size: 20px;
+    color: #1a1a1a;
+    opacity: 0.8;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  select{
+    width: 260px;
+    height: 55px;
+    border: 1xp solid rgb(181, 181, 181);
+    border-radius: 3px;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1a1a1a;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 500;
+    text-indent: 8px;
+    overflow: auto;
+  }
+
+  option{
+    font-size: 20px;
+  }
+
+  .read_time{
+    margin-left: 15%;
+  }
+
+  .read_time label{
+    font-size: 20px;
+    color: #1a1a1a;
+    opacity: 0.8;
+    font-weight: 500;
+  }
+
+  .read_time input{
+    width: 30%;
+    outline: none;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 3px;
+    height: 50px;
+    text-indent: 8px;
+    margin-left: 1%;
+  }
+
+  .read_time input::-webkit-outer-spin-button,
+  .read_time input::-webkit-inner-spin-button{
+   -webkit-appearance: none;
+  }
