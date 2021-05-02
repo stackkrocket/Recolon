@@ -1,34 +1,41 @@
 const Post = require('../models/post')
+const path = require('path');
 const multer = require('multer');
 
-// Define disk storage for multer
+//Configure Multer//
+//Set storage engine and upload location
 const storage = multer.diskStorage({
-    //File destination
-    destination: function(req, file, callback){
-        callback(null, './public/uploads/images')
-    },
-    /*By default, multer strips off file extension.  
-    This code block adds back the file's original extension
-    */
-   filename: function(req, file, callback){
-    callback(null, Date.now() + file.originalname);
-   }
-})
-//
-
-//Uploads for multer
-const upload = multer({
-    storage: storage,
-    limits: {
-        fileSize: 1024*1024*5
+    destination: './public/uploads/images/',
+    filename: function(req, file, callback){
+        callback(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
     }
 })
 
-//error code
-const errFunc = () =>{
-    const err = new Error('Posts not found');
-    err.status = 404;
-    throw err;
+//Initialize upload variable
+const upload = multer({
+    storage: storage,
+    limit: {fileSize: 5000000},
+    fileFilter: function(req, file, callback){
+        checkFileType(file, callback);
+    }
+});
+
+//c\Check file type
+function checkFileType(file, callback){
+    //Allowed extensions
+    const filetypes = /jpeg|jpg|png|gif/;
+
+    //Check for extension
+    const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+
+    //Check mime type
+    const mimetype = filetypes.test(file.mimetype);
+
+    if(extname && mimetype){
+        return callback(null, true);
+    }else{
+        callback('Error: Images Only');
+    }
 }
 
 //Shw this page when a user newly creates an account
@@ -37,17 +44,6 @@ exports.new_user = (req, res, next) => {
     res.render('auth/index')
 }
 
-//All users posts feed
-exports.user_feed = (req, res, next) => {
-    Post.find({})
-    .sort({created: -1})
-    .exec((err, allPost) => {
-        if(err) {
-           errFunc();
-        }
-        res.render('auth/user/feed', {posts: allPost})
-    })
-}
 
 //Display form for new post
 exports.create_post_form = (req, res, next) => {
@@ -58,16 +54,30 @@ exports.create_post_form = (req, res, next) => {
 exports.create_post = (req, res, next) => {
     const title = req.body.title;
     const image = req.file.filename;
+    const community = req.body.communities;
     const content = req.body.content;
-    const author = {id: req.user._id, username: req.user.username, lastName: req.user.lastName}
+    const author = {id: req.user._id, username: req.user.username, lastName: req.user.lastName};
 
-    const newPost = {title: title, image: image, content: content, author: author}
+    const newPost = {title: title, image: image, community: community, content: content, author: author};
 
-    Post.create(newPost, (err, newPost) => {
+    Post.create(newPost, (err, createdPost) => {
         if(err){
-          throw new Error('Could not publish post at this moment');
+            throw new Error('Post could not be uploaded...')
         }
-        res.redirect('/recolon/auth/user/feed')
+        res.redirect('/recolon/auth/user/index/feed');
+    })
+}
+
+//All users posts feed
+exports.user_feed = (req, res, next) => {
+    Post.find({})
+    .sort({created: -1})
+    .exec((err, allPost) => {
+        if(err) {
+           res.send(err);
+        }else{
+            res.render('auth/user/feed', {posts: allPost})
+        }
     })
 }
 
@@ -77,9 +87,10 @@ exports.show_page = (req, res, next) => {
     .populate('comments')
     .exec((err, foundPost) => {
         if(err){
-           errFunc();
+            res.send(err);
+        }else{
+            res.render('show', {post: foundPost})
         }
-        res.render('show', {post: foundPost})
     })
 }
 
@@ -100,9 +111,10 @@ exports.update_post = (req, res, next) => {
 
     Post.findByIdAndUpdate(req.params.id, editedPost, (err, editedPost) => {
         if (err){
-           errFunc();
+            res.send(err);
+        }else{
+            res.redirect('/recolon/' + req.params.id)
         }
-        res.redirect('/recolon/' + req.params.id)
     })
 }
 
@@ -110,8 +122,9 @@ exports.update_post = (req, res, next) => {
 exports.delete_post = (req, res, next) => {
     Post.findByIdAndRemove(req.params._id, (err, deletedPost) => {
         if(err){
-            errFunc();
+            res.send(err);
+        }else{
+            res.redirect('/recolon/auth/user/index/feed')   
         }
-        res.redirect('/recolon/auth/user/index/feed')
     })
 }

@@ -1,36 +1,55 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
+const multer = require('multer');
+
+//Configure Multer//
+//Set storage engine and upload location
+const storage = multer.diskStorage({
+    //set the path to save images
+    destination: './public/uploads/images/',
+
+
+    //By default, multer strips off filename and extension, 
+    //this code attach te file name and extension back to the image
+    filename: function(req, file, callback){
+        callback(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+    }
+})
+
+//Initialize upload variable
+const upload = multer({
+    storage: storage,
+    limit: {fileSize: 10},
+    fileFilter: function(req, file, callback){
+        checkFileType(file, callback);
+    }
+});
+
+//c\Check file type
+function checkFileType(file, callback){
+    //Allowed extensions
+    const filetypes = /jpeg|jpg|png|gif/;
+
+    //Check for extension
+    const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+
+    //Check mime type
+    const mimetype = filetypes.test(file.mimetype);
+
+    if(extname && mimetype){
+        return callback(null, true);
+    }else{
+        callback('Error: Images Only');
+    }
+}
+
 
 //===include post model==//
 const Post = require('../models/post')
 
 //include post controller
 const postController = require('../controllers/postController');
-
-
-const multer = require('multer');
-// Define disk storage for multer
-const storage = multer.diskStorage({
-    //File destination
-    destination: function(req, file, callback){
-        callback(null, './public/uploads/images')
-    },
-    /*By default, multer strips off file extension.  
-    This code block adds back the file's original extension
-    */
-   filename: function(req, file, callback){
-    callback(null, Date.now() + file.originalname);
-   }
-})
-//
-
-//Uploads for multer
-const upload = multer({
-    storage: storage,
-    limits: {
-        fileSize: 1024*1024*5
-    }
-})
 
 //check for authentication middleware
 const isUserAuthenticated = (req, res, next) => {

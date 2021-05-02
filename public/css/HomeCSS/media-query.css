@@ -4,7 +4,7 @@
 
 
 /* Large screen device tabs - max */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 900px){
     body{
         background: #f6f7f7;
     }

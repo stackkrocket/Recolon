@@ -7,14 +7,10 @@ var postSchema = new Schema({
         required: true
     },
     image: {
-        type: String,
+        type: Buffer,
         required: true
     },
     content: {
-        type: String,
-        required: true
-    },
-    timeToRead:{
         type: String,
         required: true
     },

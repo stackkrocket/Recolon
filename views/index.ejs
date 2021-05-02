@@ -242,12 +242,12 @@
         <% posts.forEach((post) => { %>
            <div class="item" style="margin-top: 10%;" onclick="location.href='/recolon/<%= post._id %>'">
              <div class="post-image">
-               <img src="<%= post.image %>" alt="">
+               <img src="uploads/images/<%= post.image %>" alt="">
              </div>
      
              <div class="content" style="margin-left: 2.5%;">
                <div class="username pt-1">
-                 <h5><%= post.author.username %> <%= post.author.lastName %> <span>in </span> Programming</h5>
+                 <h5><%= post.author.username %> <%= post.author.lastName %> <span>in </span> <%= post.community %> </h5>
                </div>
 
                <div class="header pt-3"> 

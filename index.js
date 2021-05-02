@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const multer = require('multer');
+const path = require('path');
 const flash = require('connect-flash');
 const methodOverride = require('method-override')
 const session = require('express-session');
@@ -9,31 +11,6 @@ const localStrategy = require('passport-local');
 const genuuid = require('uuid').v4;
 const passportLocalMongoose = require('passport-local-mongoose');
 const mongoStore = require('connect-mongo')(session)
-const multer = require('multer');
-
-// Define disk storage for multer
-const storage = multer.diskStorage({
-    //File destination
-    destination: function(req, file, callback){
-        callback(null, './public/uploads/images')
-    },
-    /*By default, multer strips off file extension.  
-    This code block adds back the file's original extension
-    */
-   filename: function(req, file, callback){
-    callback(null, Date.now() + file.originalname);
-   }
-})
-//
-
-//Uploads for multer
-const upload = multer({
-    storage: storage,
-    limits: {
-        fileSize: 1024*1024*5
-    }
-})
-
 const morgan = require('morgan');
 const ejs = require('ejs');
 const app = express();
@@ -48,6 +25,10 @@ const authRoute = require('./routes/auth'),
     blogsRoute = require('./routes/post'),
     commentRoute = require('./routes/comments'),
     activityRoute = require('./routes/activity');
+
+    //=====Include Controllers====//
+    const postController = require('./controllers/postController');
+    const authController = require('./controllers/authController');
 
 //-----Packages Configure-------//
 
