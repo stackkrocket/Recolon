@@ -39,7 +39,7 @@ body{
     background: #dedede;
 }
 
-button .profile{
+button.profile{
     display: none;
 }
 
@@ -291,14 +291,6 @@ button .profile{
 
 .links ul li i{
     padding-right: 10px;
-}
-
-.links ul li i.fa-chevron-right{
-    float: right;
-    padding-right: 20px !important;
-    font-size: 22px;
-    color: #203338;
-    opacity: 0.4;
 }
 
 .links ul li.active{

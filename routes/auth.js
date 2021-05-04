@@ -28,9 +28,9 @@ router.get('/', (req, res) => {
    .limit(10)
    .exec((err, post) => {
        if(err){
-           throw new Error('Nothing In Database')
+           throw new Error('Nothing In Database');
        }
-       res.render('index.ejs', {posts: post, currentUser: req.user});
+       res.render('index.ejs', {posts: post});
    })
 })
 //create a new user
