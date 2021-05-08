@@ -1,0 +1,96 @@
+@import url('_variable.css');
+@import url('_global.css');
+@import url('show-page.css');
+
+/* Extra small screen device - Mobile*/
+@media only screen and (max-width: 340px){
+    body{
+        background: #ffffff;
+    }
+
+    .header-area .navbar{
+        padding: 1% 2%;
+        height: 60px;
+    }
+
+    .header-area .navbar .navbar-nav.ms-auto{
+      margin: 0 0 0 -7% !important;
+      width: 114%;
+      height: auto;
+      background: #185074;
+  }
+
+  .header-area .navbar .navbar-nav button{
+      border: none;
+      outline: none;
+      box-shadow: none;
+      text-align: left;
+      width: 40%;
+      background: #185074;
+      color: #ffffff;
+  }
+
+  .navbar .navbar-nav button{
+      margin-left: 5.5%;
+  }
+
+  .navbar .navbar-nav button + button{
+      margin-left: 5.5%;
+  }
+
+  .header-area .navbar .navbar-toggler{
+      background: #dfdfdf;
+  }
+
+  .header-area .navbar .navbar-toggler:focus{
+      text-decoration: none;
+      outline: 0;
+      box-shadow: none;
+  }
+
+  .sticky-sidebar{
+    display: none;
+  }
+
+  .show-page-container .show-page-content{
+    width: 130vw !important;
+    height: auto !important;
+    margin-top: 15% !important;
+  }
+
+  .show-page-content .header{
+    margin-left: 30% !important;
+  }
+
+  .show-page-content .header h1{
+   font-size: 28px;
+   padding-left: 20px !important;
+  }
+
+  .show-page-content .user-contact .social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8% !important;
+    margin-left: 34% !important;
+  }
+
+  .show-page-content .user-contact .social span i{
+    color: #434242;
+    opacity: 0.7;
+    font-size: 22px
+  }
+
+  .social span + span{
+    padding-left: 20px !important;
+  }
+
+  .show-page-content .user-contact .timestamp_img{
+    margin-top: 6% !important;
+    margin-left: 34% !important;
+  }
+
+  .show-page-content .user-contact .timestamp_img img{
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
