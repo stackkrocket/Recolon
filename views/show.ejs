@@ -98,17 +98,19 @@
 
         <div class="user-contact">
             <div class="social">
-                <span><i class="fab fa-twitter"></i></span>
-                <span><i class="fab fa-linkedin"></i></span>
-                <span><i class="fab fa-facebook"></i></span>
-                <span><i class="fas fa-thumbtack"></i></span>
-                <span><fas class="fas fa-ellipsis-h"></fas></span>
+                <span><i class="fab fa-twitter" id="twitter-icon"></i></span>
+                <span><i class="fab fa-linkedin" id="linkeddin-icon"></i></span>
+                <span><i class="fab fa-facebook" id="facebook-icon"></i></span>
+                <span><i class="fas fa-thumbtack" id="pin-icon"></i></span>
+                <span><fas class="fas fa-ellipsis-h" id="more-icon"></fas></span>
             </div>
 
-            <div class="timestamp_img">
-                <div class="ui medium avatar image">
-                    <img src="/images/image-2.jpg" alt="">
-                </div>
+            <div class="timestamp_img_uc">
+                <img class="ui avatar image" src="/images/image-2.jpg" alt="">
+                <span class="ut">
+                    <span class="uname"><%= currentUser.username %> <%= currentUser.lastName %></>
+                    <span class="timeago"><%= post.created.toDateString() %> - 8 min read </span>
+                </span>
             </div>
         </div>
 
@@ -124,13 +126,24 @@
             <p><%- post.content %></p>
         </div>
 
+        <div class="icons">
+            <div class="likes_comments">
+                <span><i class="far fa-star"></i></span>
+                <span class="pl-3 comment-icon"><i class="far fa-comments"></i></span>
+            </div>
+            
+            <div class="share_more pl-5">
+                <span><i class="far fa-share-square"></i></span>
+                <span><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+        </div>
 
         <!--Comment section-->
         <div class="comment-section-wrapper">
             <div class="comment-section">
                 <div class="card card-body">
                     <div class="float-end">
-                        <a href="#" class="btn btn-outline-primary">thread</a><hr style="color: #999;">
+                        <a href="#" class="btn btn-outline-primary">replies</a><hr style="color: #999;">
                     </div>
                     <% post.comments.forEach((comment)=>{ %>
                          <div class="row">
@@ -142,19 +155,20 @@
                                  <p style="font-size: 12px; color: #ccc;"><%= comment.text %> </p><hr style="color: #999;">
                              </div>
                          </div>
-                    <% }) %> 
-                </div>
-            </div>
-     
-            <!--add a comment form-->
+                    <% }) %>
+                          <!--add a comment form-->
             <div class="comment-form">
                 <form action="/recolon/<%= post._id %> " method="POST">
                  <div class="form-group">
-                     <textarea name="text" class="form-control" rows="3"></textarea>
+                     <textarea name="text" class="form-control" rows="2" placeholder="What do you think?"></textarea>
                  </div>
-                 <button style="margin: 15px 0 0 0;" class="btn btn-outline-primary" type="submit"><i style="padding: 1.5px 3px 0 0;" class="fas fa-pen-alt"></i>comment</button>
+                 <button style="margin: 15px 0 0 0;" class="btn btn-outline-primary" type="submit"><i style="padding: 1.5px 3px 0 0;" class="fas fa-pen-alt"></i>reply</button>
                 </form>
-            </div>
+            </div> 
+                </div>
+
+            </div>     
+           
         </div>
     </div>
 
