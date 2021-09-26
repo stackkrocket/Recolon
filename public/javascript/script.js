@@ -15,16 +15,6 @@ visibilityToggle.addEventListener('click', () => {
       input.setAttribute('type', 'password');
       visibilityToggle.textContent = 'visibility_off';
   }
-  password = !password;
-    
+  password = !password;  
 })
 
-//
-
-
-
-//Post detail page -  Comment Thread Toggle
-const commentIcon = document.querySelector('.fa-comments');
-commentIcon.addEventListener('click', function(){
-  alert('hello!');
-})

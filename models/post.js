@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+
+
+/*===Config ends here===*/
+
 var postSchema = new Schema({
     title: {
         type: String,
@@ -20,11 +24,11 @@ var postSchema = new Schema({
     },
     created: {
         type: Date,
-        default: Date.now
+        default: Date.now()
     },
     deleted: {
         type: Date,
-        default: Date.now
+        default: Date.now()
     },
     comments: [{
         type: mongoose.Schema.Types.ObjectId,

@@ -38,6 +38,9 @@ function checkFileType(file, callback){
     }
 }
 
+
+/*===Config ends here===*/
+
 //Shw this page when a user newly creates an account
 exports.new_user = (req, res, next) => {
     console.log(req.user)
@@ -76,7 +79,7 @@ exports.user_feed = (req, res, next) => {
         if(err) {
            res.send(err);
         }else{
-            res.render('auth/user/feed', {posts: allPost})
+            res.render('auth/user/feed', {posts: allPost, currentUser: req.user})
         }
     })
 }

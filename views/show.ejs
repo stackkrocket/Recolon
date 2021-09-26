@@ -143,16 +143,16 @@
             <div class="comment-section">
                 <div class="card card-body">
                     <div class="float-end">
-                        <a href="#" class="btn btn-outline-primary">replies</a><hr style="color: #999;">
+                        <button class="reply-btn">Replies</button><hr style="color: #999;">
                     </div>
                     <% post.comments.forEach((comment)=>{ %>
                          <div class="row">
                              <div class="col-md-12">
                                  <h3>
-                                    <a  style="padding: 8px 0 0 0; font-size: 15px; color: #ccc; text-decoration: none;" href="#"> <%= comment.author.username %> </a>
+                                    <a  style="padding: 8px 0 0 0; font-size: 15px; color: #292929; text-decoration: none;" href="#" class="c-username"> <%= comment.author.username %> </a>
                                  </h3>
-                                 <span class="float-end"><em style="font-size: 10px; color: #bbb;">10 days ago</em></span>
-                                 <p style="font-size: 12px; color: #ccc;"><%= comment.text %> </p><hr style="color: #999;">
+                                 <span class="float-end"><em style="font-size: 14px; color: #292929;">10 days ago</em></span>
+                                 <p style="font-size: 12px; color: #2b2b2b;" class="c-text"><%= comment.text %> </p><hr style="color: #999;">
                              </div>
                          </div>
                     <% }) %>
@@ -162,7 +162,7 @@
                  <div class="form-group">
                      <textarea name="text" class="form-control" rows="2" placeholder="What do you think?"></textarea>
                  </div>
-                 <button style="margin: 15px 0 0 0;" class="btn btn-outline-primary" type="submit"><i style="padding: 1.5px 3px 0 0;" class="fas fa-pen-alt"></i>reply</button>
+                 <button style="margin: 15px 0 0 0;" class="btn btn-outline-primary" type="submit"><i style="padding: 1.5px 3px 0 0;" class="fas fa-pen-alt"></i>Reply</button>
                 </form>
             </div> 
                 </div>
@@ -186,6 +186,6 @@
     <script src="https://kit.fontawesome.com/a16174811d.js" crossorigin="anonymous"></script>
 
     <!--Custom Script-->
-    <script src="/javascript/script.js"></script>
+    <script src="/javascript/show.js"></script>
 </body>
 </html>
