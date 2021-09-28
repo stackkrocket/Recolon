@@ -42,6 +42,7 @@ function checkFileType(file, callback){
 /*===Config ends here===*/
 
 //Shw this page when a user newly creates an account
+// Refactor this Line of code to redirect both the user and its session to desired page
 exports.new_user = (req, res, next) => {
     console.log(req.user)
     res.render('auth/index')
@@ -72,6 +73,7 @@ exports.create_post = (req, res, next) => {
 }
 
 //All users posts feed
+//Refactor this line of code
 exports.user_feed = (req, res, next) => {
     Post.find({})
     .sort({created: -1})
